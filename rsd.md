@@ -1,7 +1,7 @@
 requirements-documents-template  
 requirements-documents-template.md
-##### Meowy A Simple Twitter Clone
-##### Requirements Specification Document
+#### Meowy A Simple Twitter Clone
+#### Requirements Specification Document
 Version <#.#>
 Revision History Table
 
