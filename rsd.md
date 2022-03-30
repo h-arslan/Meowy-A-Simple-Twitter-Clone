@@ -13,30 +13,30 @@ Usability, Security and Responsivenes requirements
 
 3. User Stories/Functional Specifications  
 at least 3 user stories which should fulfill the **Syllabus#Aim of the course**
-- Optional User Stories (We will understand that you will do this ones if you have time.)
+Optional User Stories (We will understand that you will do this ones if you have time.)
 
 4. Database Design
-- SQL Server
+SQL Server
 database diagrams
 https://docs.microsoft.com/en-us/sql/ssms/visual-db-tools/create-a-new-database-diagram-visualdatabase-tools?view=sql-server-ver15 
-- Oracle
+Oracle
 https://www.thatjeffsmith.com/archive/2011/11/how-to-generate-an-erd-for-selected-tables-in-sql-developer/ 
  
-- Postgres
+Postgres
     https://wiki.postgresql.org/wiki/Design_Tools 
 
-- Sqlite
+Sqlite
 https://dbmstools.com/categories/database-diagram-tools/sqlite?commercial=Free 
-- Schemaspy
+Schemaspy
 Schemaspy could be used to create diagrams for all allow databases in this course 
 http://schemaspy.sourceforge.net/ 
 
 5. Mock UI Screens  
 Understandable UI mockups are needed.
-- you can use A4 paper to hand draw UI and scan it
-- you can draw in whiteboard and take a photo
-- you can use powerpoint
-- you can use any mockup UI tools
+you can use A4 paper to hand draw UI and scan it
+you can draw in whiteboard and take a photo
+you can use powerpoint
+you can use any mockup UI tools
 
 6. Approval/Review Date  
 
