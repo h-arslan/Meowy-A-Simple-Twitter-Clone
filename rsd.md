@@ -1,6 +1,6 @@
 requirements-documents-template  
 requirements-documents-template.md
-##### Project Name
+##### Meowy A Simple Twitter Clone
 ##### Requirements Specification Document
 Version <#.#>
 Revision History Table
