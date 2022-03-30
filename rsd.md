@@ -34,9 +34,9 @@ This document is the requirements documentation of the simple twitter clone appl
   *	For running environment Docker containers will be used.  
 
 #### 3.User Stories/Functional Specifications  
-The user creates his personal account with the account creation interface and logs in with his e-mail and password.  
-The user, who is logged into account, can create, delete and read the shared posts.  
-The user can filter the posts by date and the word they contain, and can also search for other users in the application.
+- The user creates his personal account with the account creation interface and logs in with his e-mail and password.  
+- The user, who is logged into account, can create, delete and read the shared posts.  
+- The user can filter the posts by date and the word they contain, and can also search for other users in the application.
 
 #### 4.Database Design   
 
