@@ -1,7 +1,7 @@
 requirements-documents-template
 requirements-documents-template.md
-# Project Name
-# Requirements Specification Document
+##### Project Name
+##### Requirements Specification Document
 Version <#.#>
 Revision History Table
 
