@@ -8,10 +8,10 @@ Revision History Table
 1. Introduction
 This document is the requirements documentation of the simple twitter clone application that needs to be developed in the CENG423 Web Application Development course. The following information is included in the requirements specification document of the application that we will develop; non-functional requirements, user stories/functional specifications, database design and mock user interface screens. As a reference -links-
 
-2. Non Functional Requirements
+2. Non Functional Requirements  
 Usability, Security and Responsivenes requirements
 
-3. User Stories/Functional Specifications
+3. User Stories/Functional Specifications  
 at least 3 user stories which should fulfill the **Syllabus#Aim of the course**
 - Optional User Stories (We will understand that you will do this ones if you have time.)
 
@@ -31,13 +31,13 @@ https://dbmstools.com/categories/database-diagram-tools/sqlite?commercial=Free
 Schemaspy could be used to create diagrams for all allow databases in this course 
 http://schemaspy.sourceforge.net/ 
 
-5. Mock UI Screens
+5. Mock UI Screens  
 Understandable UI mockups are needed.
 - you can use A4 paper to hand draw UI and scan it
 - you can draw in whiteboard and take a photo
 - you can use powerpoint
 - you can use any mockup UI tools
 
-6. Approval/Review Date
+6. Approval/Review Date  
 
 
