@@ -6,7 +6,8 @@ Version <1.0.0>
 Revision History Table
 
 #### 1.Introduction  
-This document is the requirements documentation of the simple twitter clone application that needs to be developed in the CENG423 Web Application Development course. The following information is included in the requirements specification document of the application that we will develop; non-functional requirements, user stories/functional specifications, database design and mock user interface screens. As a reference -links-
+This document is the requirements documentation of the simple twitter clone application that needs to be developed in the CENG423 Web Application Development course. The following information is included in the requirements specification document of the application that we will develop; non-functional requirements, user stories/functional specifications, database design and mock user interface screens. As a reference we searched for Twitter interface coding and database scheme design.
+Also searched requirement document template examples.
 
 #### 2.Non Functional Requirements  
 
@@ -45,5 +46,5 @@ This document is the requirements documentation of the simple twitter clone appl
 #### 5.Mock UI Screens  
 
 #### 6.Approval/Review Date  
-
+31.03.2022
 
