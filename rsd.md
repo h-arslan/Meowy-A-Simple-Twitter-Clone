@@ -6,24 +6,23 @@ Version <1.0.0>
 Revision History Table
 
 #### 1.Introduction  
-This document is the requirements documentation of the simple twitter clone application that needs to be developed in the CENG423 Web Application Development course. The following information is included in the requirements specification document of the application that we will develop; non-functional requirements, user stories/functional specifications, database design and mock user interface screens. As a reference we searched for Twitter interface coding and database scheme design.
-Also searched requirement document template examples.
+This document is the requirements documentation of the simple twitter clone application that needs to be developed in the CENG423 Web Application Development course. The following information is included in the requirements specification document of the application that we will develop; non-functional requirements, user stories/functional specifications, database design and mock user interface screens. As a reference we searched for Twitter interface coding and database scheme design. Also searched requirement document template examples.
 
 #### 2.Non Functional Requirements  
 
 - Usability:   
-  * Navigation: The main goal of navigation is navigating inside the application to any page should not require to use browser’s back/forward buttons.. i.e, navgating to  a page and coming all the way back without using back/forward.  
-  * Purpose of Feature: Users should be able to understand where the detailed options are by looking the general icons/buttons.  i.e Home Page to Changing of Profile   Picture image  
+  * Navigation: The main goal of navigation is navigating inside the application to any page should not require to use browser’s back/forward buttons... i.e., navigating to  a page and coming all the way back without using back/forward.  
+  * Purpose of Feature: Users should be able to understand where the detailed options are by looking the general icons/buttons. i.e., Home Page to Changing of Profile Picture image  
   
 - Localization: Localization is measure of proper context display on different locations. This different locations means countries which are in different time zones and different languages spoken. In this application, users will be able to display their language symbols properly, for instance Chinese, Japanese, use the application with their time zone.  
 - Security:  
 	Users should obey some security rules to protect their and others accounts. These rules are,  
-  *	While registring the website users should be verify their email or phone number.   
+  *	While registering the website users should be verify their email or phone number.   
   *	While defining a password users should obey the limitations which are:  
     ---	Password should be longer than 8 characters  
     ---	Password should include at least one uppercase character and one special character  
-  *	While signed-up state, user should enter his or her password to change a criticial information  about account  
-  *	If a user enters a wrong password, the warning will be “Wrong username or password” to eliminate the multiple password trying.  
+  *	While signed-up state, user should enter his or her password to change a critical information about account  
+  *	If a user enters a wrong password, the warning will be “Wrong username or password” to eliminate the multiple passwords trying.  
 
 - Responsiveness: Display of the application will be automatically fit to the display size of computer without any misfunction.  
 
