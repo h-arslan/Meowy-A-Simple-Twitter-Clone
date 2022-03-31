@@ -38,7 +38,9 @@ This document is the requirements documentation of the simple twitter clone appl
 - The user, who is logged into account, can create, delete and read the shared posts.  
 - The user can filter the posts by date and the word they contain, and can also search for other users in the application.
 
-#### 4.Database Design   
+#### 4.Database Design  
+![image](https://user-images.githubusercontent.com/75277382/161124954-ec0a09de-3d52-4789-8b87-fa1786889d0c.png)
+
 
 #### 5.Mock UI Screens  
 
