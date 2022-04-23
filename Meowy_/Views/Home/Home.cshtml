@@ -34,7 +34,7 @@
                     <img class="imageFeed" alt="Image" />
                     <input type="text" placeholder="What's happening?" id="meow_input" oninput="meowButton()">
                 </div>
-                <button class="meowButton" id="meow_button">meow</button>
+                <button class="meowButton" id="meow_button" onclick="sendMeow">meow</button>
             </form>
         </div>
         <!--meow box ends-->
@@ -122,6 +122,10 @@
         } else {
             btn.style.backgroundColor = "#1C658C";
         }
+    }
+
+    function sendMeow(){
+        console.log("deneme");
     }
 
 

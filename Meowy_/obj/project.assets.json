@@ -8829,11 +8829,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\feyza\\OneDrive\\Documents\\Visual Studio 2022\\Meowy_\\Meowy_\\Meowy_.csproj",
+      "projectUniqueName": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\Meowy_\\Meowy_.csproj",
       "projectName": "Meowy_",
-      "projectPath": "C:\\Users\\feyza\\OneDrive\\Documents\\Visual Studio 2022\\Meowy_\\Meowy_\\Meowy_.csproj",
+      "projectPath": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\Meowy_\\Meowy_.csproj",
       "packagesPath": "C:\\Users\\feyza\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\feyza\\OneDrive\\Documents\\Visual Studio 2022\\Meowy_\\Meowy_\\obj\\",
+      "outputPath": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\Meowy_\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\feyza\\AppData\\Roaming\\NuGet\\NuGet.Config",
