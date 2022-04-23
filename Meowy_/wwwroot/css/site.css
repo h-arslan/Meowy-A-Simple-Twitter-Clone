@@ -1,0 +1,356 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    --meowy-color: #1C658C;
+    --meowy-color2: #8daec0;
+    --meowy-background: #EEEEEE;
+    /*#8093a5*/
+
+    display: flex;
+    height: 100vh;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+}
+
+
+/**** sidebar ****/
+
+.sidebar {
+    border-right: 1px solid var(--meowy-background);
+    min-width: 250px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    flex: 0.2;
+}
+
+.fa-cat {
+    color: var(--meowy-color);
+    font-size: 30px;
+}
+
+.sidebarOption {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+    .sidebarOption:hover {
+        background-color: var(--meowy-background);
+        color: var(--meowy-color);
+        border-radius: 30px;
+        transition: color 100ms ease-out;
+        width: 90%;
+    }
+
+    .sidebarOption.active {
+        color: var(--meowy-color);
+    }
+
+    .sidebarOption .material-icons,
+    .fa-cat {
+        padding: 13px;
+    }
+
+    .sidebarOption h2 {
+        font-weight: lighter;
+        font-size: 18px;
+        margin-right: 20px;
+    }
+
+.sidebarMeow {
+    border: none;
+    border-radius: 30px;
+    width: 90%;
+    height: 45px;
+    margin-top: 10px;
+    background-color: var(--meowy-color);
+    cursor: pointer;
+    letter-spacing: 5px;
+    font-size: 17px;
+    color: white;
+}
+
+.image {
+    content: url("https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png");
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 60px;
+}
+
+.profileName {
+    color: gray;
+}
+
+/**** feed ****/
+.feed {
+    flex: 0.2;
+    border-right: 1px solid var(--meowy-background);
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+    .feed::-webkit-scrollbar {
+        display: none;
+    }
+
+.feedHeader {
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
+    padding: 15px 20px;
+}
+
+    .feedHeader h2 {
+        font-size: 20px;
+        letter-spacing: 0.5px;
+    }
+
+/**** feed explore ****/
+/*.feed-explore {
+    flex: 0.5;*/
+    /* border-right: 1px solid var(--meowy-background); */
+    /*min-width: fit-content;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+    .feed-explore::-webkit-scrollbar {
+        display: none;
+    }*/
+
+/**** meow box ****/
+
+.imageFeed {
+    content: url("https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png");
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 60px;
+}
+
+.meowBox {
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--meowy-background);
+    padding-right: 10px;
+}
+
+    .meowBox form {
+        display: flex;
+        flex-direction: column;
+    }
+
+.meowInput {
+    display: flex;
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+    .meowInput input {
+        flex: 1;
+        margin-left: 20px;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid var(--meowy-background);
+        padding-bottom: 50px;
+    }
+
+.meowButton {
+    background-color: var(--meowy-color2);
+    border: none;
+    color: white;
+    border-radius: 30px;
+    width: 80px;
+    height: 35px;
+    margin-left: auto;
+}
+
+/**** post ****/
+
+.post {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--meowy-background);
+    padding-bottom: 10px;
+}
+
+.postFooter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-right: 10px;
+    color: gray;
+}
+
+    .postFooter .material-icons {
+        font-size: 19.5px;
+        cursor: pointer;
+    }
+
+        .postFooter .material-icons.comment:hover {
+            color: rgb(34, 124, 207);
+            background-color: rgba(34, 123, 207, 0.096);
+            width: 20px;
+            height: 20px;
+        }
+
+        .postFooter .material-icons.remeow:hover {
+            color: rgb(20, 179, 20);
+            background-color: rgba(34, 207, 112, 0.096);
+            width: 20px;
+            height: 20px;
+        }
+
+        .postFooter .material-icons.fav:hover {
+            color: rgb(194, 0, 42);
+            background-color: rgba(207, 34, 100, 0.096);
+            width: 20px;
+            height: 20px;
+        }
+
+.postUsername {
+    font-weight: lighter;
+    font-size: 15.3px;
+    color: gray;
+}
+
+.postUserInfo h3 {
+    font-size: 15.3px;
+    margin-bottom: 5px;
+    color: rgb(26, 26, 26);
+}
+
+.postContent {
+    margin-bottom: 10px;
+    font-size: 15.3px;
+    color: rgb(54, 54, 54);
+    letter-spacing: 0.1px;
+}
+
+.postBody {
+    flex: 1;
+    width: 450px;
+    padding-top: 20px;
+    padding-bottom: 1px;
+    padding-right: 10px;
+}
+
+.postImage {
+    padding: 15px;
+    padding-top: 20px;
+}
+
+/**** profile ****/
+
+.imageProfile {
+    content: url("https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png");
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.profileBox {
+    border-bottom: 1px solid var(--meowy-background);
+    background-color: rgb(235, 235, 235);
+    border-bottom: none;
+}
+
+    .profileBox form {
+        display: flex;
+    }
+
+.profileScreen {
+    display: flex;
+    padding-top: 65px;
+    padding-left: 0px;
+}
+
+.editButton {
+    background-color: white;
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 30px;
+    width: 100px;
+    height: 35px;
+    margin-left: 390px;
+    margin-top: 120px;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+}
+
+.profileMenu {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--meowy-background);
+    justify-content: space-between;
+}
+
+    .profileMenu button {
+        background-color: white;
+        color: rgb(29, 29, 29);
+        border: none;
+        letter-spacing: 1px;
+        padding: 10px;
+        margin: 5px;
+        cursor: pointer;
+        font-weight: bolder;
+    }
+
+        .profileMenu button:hover {
+            background-color: rgb(246, 250, 250);
+            transition: color 100ms ease-out;
+        }
+
+
+/**** widgets ****/
+
+.widgets {
+    /*flex: 0.1px;*/
+}
+
+.searchInput {
+    display: flex;
+    align-items: center;
+    background-color: var(--meowy-background);
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+    .searchInput input {
+        border: none;
+        background-color: var(--meowy-background);
+        outline: none;
+        margin-left: 5px;
+    }
+
+.searchIcon {
+    color: gray;
+}
+
+.widgetContainer {
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: var(--meowy-background);
+    border-radius: 20px;
+}
+
+    .widgetContainer h2 {
+        font-size: 18px;
+    }
