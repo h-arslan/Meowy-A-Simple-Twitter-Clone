@@ -463,9 +463,7 @@ C:\Users\feyza\OneDrive\Documents\GitHub\Meowy-A-Simple-Twitter-Clone\Meowy_\obj
 C:\Users\feyza\OneDrive\Documents\GitHub\Meowy-A-Simple-Twitter-Clone\Meowy_\obj\Debug\net6.0\Meowy_.RazorAssemblyInfo.cs
 C:\Users\feyza\OneDrive\Documents\GitHub\Meowy-A-Simple-Twitter-Clone\Meowy_\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\feyza\OneDrive\Documents\GitHub\Meowy-A-Simple-Twitter-Clone\Meowy_\obj\Debug\net6.0\staticwebassets.development.json
-C:\Users\feyza\OneDrive\Documents\GitHub\Meowy-A-Simple-Twitter-Clone\Meowy_\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\feyza\OneDrive\Documents\GitHub\Meowy-A-Simple-Twitter-Clone\Meowy_\obj\Debug\net6.0\scopedcss\bundle\Meowy_.styles.css
-C:\Users\feyza\OneDrive\Documents\GitHub\Meowy-A-Simple-Twitter-Clone\Meowy_\obj\Debug\net6.0\scopedcss\projectbundle\Meowy_.bundle.scp.css
 C:\Users\feyza\OneDrive\Documents\GitHub\Meowy-A-Simple-Twitter-Clone\Meowy_\obj\Debug\net6.0\Meowy_.csproj.CopyComplete
 C:\Users\feyza\OneDrive\Documents\GitHub\Meowy-A-Simple-Twitter-Clone\Meowy_\obj\Debug\net6.0\Meowy_.dll
 C:\Users\feyza\OneDrive\Documents\GitHub\Meowy-A-Simple-Twitter-Clone\Meowy_\obj\Debug\net6.0\refint\Meowy_.dll

@@ -19,16 +19,14 @@ body {
     padding: 0 10px;
 }
 
-
 /**** sidebar ****/
 
 .sidebar {
     border-right: 1px solid var(--meowy-background);
+    flex: 0.2;
     min-width: 250px;
     padding-left: 10px;
-    padding-right: 10px;
-
-    flex: 0.2;
+    padding-right: 20px;
 }
 
 .fa-cat {
@@ -95,6 +93,7 @@ body {
 .feed {
     flex: 0.48;
     border-right: 1px solid var(--meowy-background);
+    min-width: fit-content;
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -117,10 +116,10 @@ body {
     }
 
 /**** feed explore ****/
-/*.feed-explore {
-    flex: 0.5;*/
+.feed-explore {
+    flex: 0.5;
     /* border-right: 1px solid var(--meowy-background); */
-    /*min-width: fit-content;
+    min-width: fit-content;
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -128,7 +127,7 @@ body {
 
     .feed-explore::-webkit-scrollbar {
         display: none;
-    }*/
+    }
 
 /**** meow box ****/
 

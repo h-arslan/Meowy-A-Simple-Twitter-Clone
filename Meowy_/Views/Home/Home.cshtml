@@ -20,9 +20,53 @@
 </head>
 
 <body>    
+    <!--sidebar starts-->
+    <div class="sidebar">
+        <i class="fas fa-cat"></i>
+        <div class="sidebarOption" onclick="window.location.href='/Home/Home'">
+            <span class="material-icons"> home </span>
+            <h2>Home</h2>
+        </div>
+        <div class="sidebarOption" onclick="window.location.href='/Home/Explore'">
+            <span class="material-icons"> tag </span>
+            <h2>Explore</h2>
+        </div>
+        <div class="sidebarOption" onclick="window.location.href='/Home/Notifications'">
+            <span class="material-icons"> notifications_none </span>
+            <h2>Notifications</h2>
+        </div>
+        <div class="sidebarOption" onclick="window.location.href='/Home/Messages'">
+            <span class="material-icons"> mail_outline </span>
+            <h2>Messages</h2>
+        </div>
+        <div class="sidebarOption" onclick="window.location.href='/Home/Bookmarks'">
+            <span class="material-icons"> bookmark_border </span>
+            <h2>Bookmarks</h2>
+        </div>
+        <div class="sidebarOption" onclick="window.location.href='/Home/FRequests'">
+            <span class="material-icons"> list </span>
+            <h2>Follow Requests</h2>
+        </div>
+        <div class="sidebarOption" onclick="window.location.href='/Home/Profile'">
+            <span class="material-icons"> perm_identity </span>
+            <h2>Profile</h2>
+        </div>
+        <div class="sidebarOption" onclick="window.location.href='/Home/Settings'">
+            <span class="material-icons"> more_horiz </span>
+            <h2>Settings</h2>
+        </div>
+
+        <button class="sidebarMeow" onclick="window.location.href='/Home/Home'">meow</button>
+
+        <img class="image" alt="Image" />
+        <div class="profileName">
+            username__
+        </div>
+    </div>
+    <!--sidebar ends-->
 
     <!--feed starts-->
-    <div>
+    <div class="feed">
         <div class="feedHeader">
             <h2>Home</h2>
         </div>
@@ -109,6 +153,22 @@
 
     </div>
     <!--feed ends-->
+
+    <!--widget starts-->
+    <div class="widgets">
+        <div class="searchInput">
+            <span class="material-icons searchIcon"> search</span>
+            <input type="text" placeholder="Search Meowy">
+        </div>
+
+        <div class="widgetContainer">
+            <h2>Trends for you</h2>
+            <blockquote class="tags">
+
+            </blockquote>
+        </div>
+    </div>
+    <!--widget ends-->
 </body>
 
 <script>
