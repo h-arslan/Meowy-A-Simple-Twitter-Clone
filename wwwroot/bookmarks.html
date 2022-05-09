@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarks / Meowy</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+          crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--sidebar starts-->
+    <div class="sidebar">
+        <i class="fas fa-cat"></i>
+        <div class="sidebarOption" onclick="window.location.href='index.html'">
+            <span class="material-icons"> home </span>
+            <h2>Home</h2>
+        </div>
+        <div class="sidebarOption" onclick="window.location.href='explore.html'">
+            <span class="material-icons"> tag </span>
+            <h2>Explore</h2>
+        </div>
+        <div class="sidebarOption" onclick="window.location.href='notifications.html'">
+            <span class="material-icons"> notifications_none </span>
+            <h2>Notifications</h2>
+        </div>
+        <div class="sidebarOption" onclick="window.location.href='messages.html'">
+            <span class="material-icons"> mail_outline </span>
+            <h2>Messages</h2>
+        </div>
+        <div class="sidebarOption" onclick="window.location.href='bookmarks.html'">
+            <span class="material-icons"> bookmark_border </span>
+            <h2>Bookmarks</h2>
+        </div>
+        <div class="sidebarOption" onclick="window.location.href='followreq.html'">
+            <span class="material-icons"> list </span>
+            <h2>Follow Requests</h2>
+        </div>
+        <div class="sidebarOption" onclick="window.location.href='profile.html'">
+            <span class="material-icons"> perm_identity </span>
+            <h2>Profile</h2>
+        </div>
+        <div class="sidebarOption" onclick="window.location.href='settings.html'">
+            <span class="material-icons"> more_horiz </span>
+            <h2>Settings</h2>
+        </div>
+
+        <button class="sidebarMeow" onclick="window.location.href='index.html'">meow</button>
+
+        <img class="image" alt="Image" />
+        <div class="profileName">
+            username__
+        </div>
+    </div>
+    <!--sidebar ends-->
+    <!--feed starts-->
+    <div class="feed">
+        <div class="feedHeader">
+            <h2>Bookmarks</h2>
+        </div>
+    </div>
+    <!--feed ends-->
+    <!--widget starts-->
+    <div class="widgets">
+        <div class="searchInput">
+            <span class="material-icons searchIcon"> search</span>
+            <input type="text" placeholder="Search Meowy">
+        </div>
+
+        <div class="widgetContainer">
+            <h2>Trends for you</h2>
+            <blockquote class="tags">
+            </blockquote>
+        </div>
+    </div>
+    <!--widget ends-->
+
+</body>
+
+</html>
