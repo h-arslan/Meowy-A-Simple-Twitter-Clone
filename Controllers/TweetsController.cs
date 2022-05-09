@@ -16,7 +16,7 @@ namespace Meowy_deneme.Controllers
             _context = context;
         }
 
-        // GET: api/TodoItems
+        // GET: api/tweets
         [HttpGet]
         public async Task<ActionResult<IEnumerable<TweetDTO>>> GetTweets()
         {
@@ -25,7 +25,7 @@ namespace Meowy_deneme.Controllers
                 .ToListAsync();
         }
 
-        // GET: api/TodoItems/5
+        // GET: api/tweets/5
         [HttpGet("{id}")]
         public async Task<ActionResult<TweetDTO>> GetTweet(long id)
         {
@@ -39,14 +39,12 @@ namespace Meowy_deneme.Controllers
             return ItemToDTO(tweet);
         }
 
-        // POST: api/TodoItems
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // POST: api/tweets
         [HttpPost]
         public async Task<ActionResult<TweetDTO>> CreateTodoItem(TweetDTO tweetDTO)
         {
             var tweet = new Tweet
             {
-                //tweet_id = tweetDTO.tweet_id,
                 user_id = tweetDTO.user_id,
                 Contents = tweetDTO.Contents,
                 fav_count = tweetDTO.fav_count,
@@ -64,6 +62,22 @@ namespace Meowy_deneme.Controllers
                 nameof(GetTweet),
                 new { id = tweet.Id },
                 ItemToDTO(tweet));
+        }
+
+        // DELETE: api/tweets/5
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteTweet(long id)
+        {
+            var tweet = await _context.Tweets.FindAsync(id);
+            if (tweet == null)
+            {
+                return NotFound();
+            }
+
+            _context.Tweets.Remove(tweet);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
         }
 
         private bool TweetExists(long id)

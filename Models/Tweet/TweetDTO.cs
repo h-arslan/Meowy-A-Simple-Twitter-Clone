@@ -3,9 +3,10 @@
     public class TweetDTO
     {
         public long Id { get; set; }
-        public long user_id { get; set; }
+        public long User_Id { get; set; }
         public string? Contents { get; set; }
-        public int fav_count { get; set; }
-        public DateTime date { get; set; }
+        public int Fav_Count { get; set; }
+        public DateTime Date { get; set; }
+
     }
 }
