@@ -45,10 +45,10 @@ namespace Meowy_deneme.Controllers
         {
             var tweet = new Tweet
             {
-                user_id = tweetDTO.user_id,
+                User_Id = tweetDTO.User_Id,
                 Contents = tweetDTO.Contents,
-                fav_count = tweetDTO.fav_count,
-                date = DateTime.Now
+                Fav_Count = tweetDTO.Fav_Count,
+                Date = DateTime.Now
             };
 
             _context.Tweets.Add(tweet);
@@ -89,10 +89,10 @@ namespace Meowy_deneme.Controllers
             new TweetDTO
             {
                 Id = tweet.Id,
-                user_id = tweet.user_id,
+                User_Id = tweet.User_Id,
                 Contents = tweet.Contents,
-                fav_count = tweet.fav_count,
-                date = DateTime.Now
+                Fav_Count = tweet.Fav_Count,
+                Date = DateTime.Now
             };
     }
 
