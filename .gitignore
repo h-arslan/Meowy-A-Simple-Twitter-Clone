@@ -12,9 +12,21 @@
 
 
 #ignored files
-/obj
-/.vs
-/bin
+
+
+obj
+.vs
+bin
+
+Meowy-A-Simple-Twitter-Clone/obj
+
+
+Meowy-A-Simple-Twitter-Clone/.vs
+
+
+Meowy-A-Simple-Twitter-Clone/bin
+
+
 
 
 
