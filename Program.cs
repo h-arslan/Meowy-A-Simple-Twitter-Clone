@@ -27,3 +27,5 @@ app.Run();
 
 // deneme commitiii gitignore check !!!!!!!!!!!!!!!!!!!!!!!!
 
+// deneme commitiii 2 gitignore check !!!!!!!!!!!!!!!!!!!!!!!!
+
