@@ -1,0 +1,17 @@
+[
+  
+  {
+    "Id": 1,
+    "User_Id": 0,
+    "Contents": "my tweet1",
+    "Fav_Count": 0,
+    "Date": "2022-05-13T00:53:56.9917691+03:00"
+  },
+  {
+    "Id": 2,
+    "User_Id": 0,
+    "Contents": "my tweet2 !",
+    "Fav_Count": 0,
+    "Date": "2022-05-13T00:54:05.5131726+03:00"
+  }
+]
