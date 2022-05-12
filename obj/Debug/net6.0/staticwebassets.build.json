@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "A3Ov2jboH5xiQ5fgWVbLrCGI1YDJzmMb345iNXaUZ5I=",
+  "Hash": "2OIcrez1Aosux8JzG1HLBsuznfzeICRZMvwer25u7cY=",
   "Source": "Meowy-A-Simple-Twitter-Clone",
   "BasePath": "_content/Meowy-A-Simple-Twitter-Clone",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Meowy-A-Simple-Twitter-Clone\\wwwroot",
       "Source": "Meowy-A-Simple-Twitter-Clone",
-      "ContentRoot": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\",
       "BasePath": "_content/Meowy-A-Simple-Twitter-Clone",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\bookmarks.html",
+      "Identity": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\bookmarks.html",
       "SourceId": "Meowy-A-Simple-Twitter-Clone",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\",
       "BasePath": "_content/Meowy-A-Simple-Twitter-Clone",
       "RelativePath": "bookmarks.html",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\bookmarks.html"
     },
     {
-      "Identity": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\css\\signin.css",
+      "Identity": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\css\\signin.css",
       "SourceId": "Meowy-A-Simple-Twitter-Clone",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\",
       "BasePath": "_content/Meowy-A-Simple-Twitter-Clone",
       "RelativePath": "css/signin.css",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\css\\signin.css"
     },
     {
-      "Identity": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\css\\signup.css",
+      "Identity": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\css\\signup.css",
       "SourceId": "Meowy-A-Simple-Twitter-Clone",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\",
       "BasePath": "_content/Meowy-A-Simple-Twitter-Clone",
       "RelativePath": "css/signup.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\signup.css"
     },
     {
-      "Identity": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\css\\style.css",
+      "Identity": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\css\\style.css",
       "SourceId": "Meowy-A-Simple-Twitter-Clone",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\",
       "BasePath": "_content/Meowy-A-Simple-Twitter-Clone",
       "RelativePath": "css/style.css",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-      "Identity": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\data\\data.json",
+      "Identity": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\data\\data.json",
       "SourceId": "Meowy-A-Simple-Twitter-Clone",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\",
       "BasePath": "_content/Meowy-A-Simple-Twitter-Clone",
       "RelativePath": "data/data.json",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\data\\data.json"
     },
     {
-      "Identity": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\explore.html",
+      "Identity": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\explore.html",
       "SourceId": "Meowy-A-Simple-Twitter-Clone",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\",
       "BasePath": "_content/Meowy-A-Simple-Twitter-Clone",
       "RelativePath": "explore.html",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\explore.html"
     },
     {
-      "Identity": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\followreq.html",
+      "Identity": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\followreq.html",
       "SourceId": "Meowy-A-Simple-Twitter-Clone",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\",
       "BasePath": "_content/Meowy-A-Simple-Twitter-Clone",
       "RelativePath": "followreq.html",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\followreq.html"
     },
     {
-      "Identity": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\index.html",
+      "Identity": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\index.html",
       "SourceId": "Meowy-A-Simple-Twitter-Clone",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\",
       "BasePath": "_content/Meowy-A-Simple-Twitter-Clone",
       "RelativePath": "index.html",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\js\\tweet.js",
+      "Identity": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\js\\tweet.js",
       "SourceId": "Meowy-A-Simple-Twitter-Clone",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\",
       "BasePath": "_content/Meowy-A-Simple-Twitter-Clone",
       "RelativePath": "js/tweet.js",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\js\\tweet.js"
     },
     {
-      "Identity": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\messages.html",
+      "Identity": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\messages.html",
       "SourceId": "Meowy-A-Simple-Twitter-Clone",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\",
       "BasePath": "_content/Meowy-A-Simple-Twitter-Clone",
       "RelativePath": "messages.html",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\messages.html"
     },
     {
-      "Identity": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\notifications.html",
+      "Identity": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\notifications.html",
       "SourceId": "Meowy-A-Simple-Twitter-Clone",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\",
       "BasePath": "_content/Meowy-A-Simple-Twitter-Clone",
       "RelativePath": "notifications.html",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\notifications.html"
     },
     {
-      "Identity": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\profile.html",
+      "Identity": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\profile.html",
       "SourceId": "Meowy-A-Simple-Twitter-Clone",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\",
       "BasePath": "_content/Meowy-A-Simple-Twitter-Clone",
       "RelativePath": "profile.html",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\profile.html"
     },
     {
-      "Identity": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\settings.html",
+      "Identity": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\settings.html",
       "SourceId": "Meowy-A-Simple-Twitter-Clone",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\",
       "BasePath": "_content/Meowy-A-Simple-Twitter-Clone",
       "RelativePath": "settings.html",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\settings.html"
     },
     {
-      "Identity": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\signin.html",
+      "Identity": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\signin.html",
       "SourceId": "Meowy-A-Simple-Twitter-Clone",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\",
       "BasePath": "_content/Meowy-A-Simple-Twitter-Clone",
       "RelativePath": "signin.html",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\signin.html"
     },
     {
-      "Identity": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\signup.html",
+      "Identity": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\signup.html",
       "SourceId": "Meowy-A-Simple-Twitter-Clone",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\wwwroot\\",
       "BasePath": "_content/Meowy-A-Simple-Twitter-Clone",
       "RelativePath": "signup.html",
       "AssetKind": "All",

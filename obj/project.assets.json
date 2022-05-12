@@ -1796,19 +1796,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\feyza\\.nuget\\packages\\": {}
+    "C:\\Users\\agiri\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\Meowy-A-Simple-Twitter-Clone.csproj",
+      "projectUniqueName": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\Meowy-A-Simple-Twitter-Clone.csproj",
       "projectName": "Meowy-A-Simple-Twitter-Clone",
-      "projectPath": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\Meowy-A-Simple-Twitter-Clone.csproj",
-      "packagesPath": "C:\\Users\\feyza\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\obj\\",
+      "projectPath": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\Meowy-A-Simple-Twitter-Clone.csproj",
+      "packagesPath": "C:\\Users\\agiri\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\feyza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\agiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
