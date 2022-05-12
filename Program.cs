@@ -25,3 +25,5 @@ app.MapControllers();
 
 app.Run();
 
+// deneme commitiii gitignore check !!!!!!!!!!!!!!!!!!!!!!!!
+

@@ -1,12 +1,7 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Controllers",
-    "\\Models",
-    "\\Models\\Tweet",
-    "\\wwwroot",
-    "\\wwwroot\\css",
-    "\\wwwroot\\data"
+    "\\Controllers"
   ],
   "SelectedNode": "\\Meowy-A-Simple-Twitter-Clone.sln",
   "PreviewInSolutionExplorer": false
