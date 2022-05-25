@@ -47,6 +47,8 @@ namespace Meowy.Controllers
             {
                 User_Id = tweetDTO.User_Id,
                 Contents = tweetDTO.Contents,
+                Comment_Count = tweetDTO.Comment_Count,
+                Retweet_Count = tweetDTO.Retweet_Count,
                 Fav_Count = tweetDTO.Fav_Count,
                 Date = DateTime.Now
             };
@@ -91,6 +93,8 @@ namespace Meowy.Controllers
                 Id = tweet.Id,
                 User_Id = tweet.User_Id,
                 Contents = tweet.Contents,
+                Comment_Count = tweet.Comment_Count,
+                Retweet_Count = tweet.Retweet_Count,
                 Fav_Count = tweet.Fav_Count,
                 Date = DateTime.Now
             };

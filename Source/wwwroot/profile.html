@@ -13,6 +13,8 @@
           crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 
 <body>
@@ -27,17 +29,9 @@
             <span class="material-icons"> tag </span>
             <h2>Explore</h2>
         </div>
-        <div class="sidebarOption" onclick="window.location.href='notifications.html'">
-            <span class="material-icons"> notifications_none </span>
-            <h2>Notifications</h2>
-        </div>
-        <div class="sidebarOption" onclick="window.location.href='messages.html'">
+         <div class="sidebarOption" onclick="window.location.href='messages.html'">
             <span class="material-icons"> mail_outline </span>
             <h2>Messages</h2>
-        </div>
-        <div class="sidebarOption" onclick="window.location.href='bookmarks.html'">
-            <span class="material-icons"> bookmark_border </span>
-            <h2>Bookmarks</h2>
         </div>
         <div class="sidebarOption" onclick="window.location.href='followreq.html'">
             <span class="material-icons"> list </span>
@@ -60,29 +54,32 @@
         </div>
     </div>
     <!--sidebar ends-->
+
     <!--feed starts-->
     <div class="feed">
         <div class="feedHeader">
             <h2>Profile</h2>
         </div>
 
-        <!--profile box starts-->
-        <div class="profileBox">
-            <form>
-                <div class="profileScreen">
-                    <img class="imageProfile" alt="Image" />
-                </div>
-                <button class="editButton">Edit Profile</button>
-            </form>
-        </div>
-        <!--profile box ends-->
-
         <div class="profileMenu">
-            <button>All Meows</button>
-            <button>Just Your Meows</button>
-            <button>ReMeows</button>
+            <button>Meows</button>
+            <button>Comments</button>
+            <button>Remeows</button>
             <button>Likes</button>
         </div>
+
+        <script>
+            $(document).ready(function () {
+                $.getJSON("data/Tweet.json", function (data) {
+                    var student = '';
+
+                    $.each(data, function (key, value) {
+                        student += '<div>' + value.Contents + '</div>';
+                    });
+                    $('#table').append(student);
+                });
+            });
+        </script>
 
         <!--post starts-->
         <div class="post">
@@ -94,20 +91,11 @@
                 <div class="postHeader">
 
                     <div class="postUserInfo">
-                        <h3>
-                            Name Surname
-                            <span class="postUsername">
-                                username__
-                            </span>
-                        </h3>
+                        <h3>Name Surname <span class="postUsername"> username__  </span></h3>
                     </div>
 
-                    <div class="postContent">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi expedita totam blanditiis
-                            perferendis voluptatum iure corrupti. Accusantium tempora neque maiores quia, quis aut
-                            similique quam consequatur architecto cum eaque harum?
-                        </p>
+                    <div class="postContent" id="table">
+                        
                     </div>
                 </div>
 
@@ -119,9 +107,9 @@
             </div>
         </div>
         <!--post ends-->
-
     </div>
     <!--feed ends-->
+
     <!--widget starts-->
     <div class="widgets">
         <div class="searchInput">

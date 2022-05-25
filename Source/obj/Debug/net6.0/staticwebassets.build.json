@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ysGXwnR71pQ1P4fSVOH8YoYvt/yXGctIWIsgxtk+jMg=",
+  "Hash": "5qY0WQGN8zNfrl7ZYlgCjMvljukheEuPYitE9mm7Jqg=",
   "Source": "Meowy",
   "BasePath": "_content/Meowy",
   "Mode": "Default",
@@ -16,23 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\Source\\wwwroot\\bookmarks.html",
-      "SourceId": "Meowy",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\Source\\wwwroot\\",
-      "BasePath": "_content/Meowy",
-      "RelativePath": "bookmarks.html",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\bookmarks.html"
-    },
     {
       "Identity": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\Source\\wwwroot\\css\\signin.css",
       "SourceId": "Meowy",
@@ -219,23 +202,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\messages.html"
-    },
-    {
-      "Identity": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\Source\\wwwroot\\notifications.html",
-      "SourceId": "Meowy",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\Source\\wwwroot\\",
-      "BasePath": "_content/Meowy",
-      "RelativePath": "notifications.html",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\notifications.html"
     },
     {
       "Identity": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\Source\\wwwroot\\profile.html",
