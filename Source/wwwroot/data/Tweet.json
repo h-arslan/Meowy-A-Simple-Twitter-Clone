@@ -1,12 +1,1 @@
-[
-  
-  {
-    "Id": 1,
-    "User_Id": 0,
-    "Contents": "hellooo",
-    "Comment_Count": 0,
-    "Retweet_Count": 0,
-    "Fav_Count": 0,
-    "Date": "2022-05-25T23:47:26.005066+03:00"
-  }
-]
+[{"Id":1,"User_Id":0,"Contents":"deneme meowy 123 ..!","Comment_Count":0,"Retweet_Count":0,"Fav_Count":0,"Date":"2022-05-26T00:00:00+03:00"},{"Id":2,"User_Id":0,"Contents":"deneme tweet 2!!","Comment_Count":0,"Retweet_Count":0,"Fav_Count":0,"Date":"2022-05-26T00:00:00+03:00"}]

@@ -56,7 +56,7 @@ body {
 
     .sidebarOption .material-icons,
     .fa-cat {
-        padding: 13px;
+        padding: 20px;
     }
 
     .sidebarOption h2 {
@@ -65,26 +65,13 @@ body {
         margin-right: 20px;
     }
 
-.sidebarMeow {
-    border: none;
-    border-radius: 30px;
-    width: 90%;
-    height: 45px;
-    margin-top: 20px;
-    background-color: var(--meowy-color);
-    cursor: pointer;
-    letter-spacing: 5px;
-    font-size: 17px;
-    color: white;
-}
-
 .image {
     content: url("https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png");
     width: 40px;
     height: 40px;
     border-radius: 50%;
     display: inline-block;
-    margin-top: 140px;
+    margin-top: 110px;
 }
 
 .profileName {
@@ -116,22 +103,8 @@ body {
         letter-spacing: 0.5px;
     }
 
-/**** feed explore ****/
-/*.feed-explore {
-    flex: 0.5;*/
-/* border-right: 1px solid var(--meowy-background); */
-/*min-width: fit-content;
-    overflow-y: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-    .feed-explore::-webkit-scrollbar {
-        display: none;
-    }*/
 
 /**** meow box ****/
-
 .imageFeed {
     content: url("https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png");
     width: 45px;
@@ -181,7 +154,6 @@ body {
 }
 
 /**** post ****/
-
 .post {
     display: flex;
     align-items: flex-start;
@@ -233,6 +205,12 @@ body {
     margin-bottom: 5px;
     color: rgb(26, 26, 26);
 }
+    .postUserInfo h3 a {
+        font-size: 15.3px;
+        margin-bottom: 5px;
+        color: gray;
+        font-weight: lighter;
+    }
 
 .postContent {
     margin-bottom: 10px;
@@ -255,7 +233,6 @@ body {
 }
 
 /**** profile ****/
-
 .imageProfile {
     content: url("https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png");
     width: 100px;
@@ -317,7 +294,6 @@ body {
 
 
 /**** widgets ****/
-
 .widgets {
     flex: 0.3;
 }

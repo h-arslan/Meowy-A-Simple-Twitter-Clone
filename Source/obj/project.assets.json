@@ -785,23 +785,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\agiri\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\feyza\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\Source\\Meowy.csproj",
+      "projectUniqueName": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\Source\\Meowy.csproj",
       "projectName": "Meowy",
-      "projectPath": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\Source\\Meowy.csproj",
-      "packagesPath": "C:\\Users\\agiri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\agiri\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\Source\\obj\\",
+      "projectPath": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\Source\\Meowy.csproj",
+      "packagesPath": "C:\\Users\\feyza\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\Source\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\agiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\feyza\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -862,7 +858,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -46,8 +46,6 @@
             <h2>Settings</h2>
         </div>
 
-        <button class="sidebarMeow" onclick="window.location.href='index.html'">meow</button>
-
         <img class="image" alt="Image" />
         <div class="profileName">
             username__
@@ -63,9 +61,9 @@
 
         <div class="profileMenu">
             <button>Meows</button>
-            <button>Comments</button>
-            <button>Remeows</button>
-            <button>Likes</button>
+            <button onclick="window.location.href='profile_comments.html'">Comments</button>
+            <button onclick="window.location.href='profile_remeows.html'">Remeows</button>
+            <button onclick="window.location.href='profile_likes.html'">Likes</button>
         </div>
 
         <script>
@@ -76,27 +74,27 @@
                     $.each(data, function (key, value) {
                         student +=
                             '<div class="post">' +
-                            '<div class="postImage">' +
-                            '<img class="imageFeed" alt="Image" />' +
-                            '</div>' +
+                                '<div class="postImage">' +
+                                    '<img class="imageFeed" alt="Image" />' +
+                                '</div>' +
 
-                            '<div class="postBody">' +
-                            '<div class="postHeader">' + value.Date +
-                            '<div class="postUserInfo">' +
-                            '<h3>Name Surname <span class="postUsername"> username__  </span></h3>' +
-                            '</div>' +
+                                '<div class="postBody">' +
+                                    '<div class="postHeader">' +
+                                        '<div class="postUserInfo">' +
+                                            '<h3>Name Surname <span class="postUsername"> username__</span>' + '<a>'+value.Date+'</a></h3>' +
+                                        '</div>' +
 
-                            '<div class="postContent">'
-                            + value.Contents +
-                            '</div>' +
-                            '</div>' +
+                                        '<div class="postContent">'
+                                            + value.Contents +
+                                        '</div>' +
+                                    '</div>' +
 
-                            '<div class="postFooter">' +
-                            '<span class="material-icons comment"> chat_bubble_outline </span>' + value.Comment_Count +
-                            '<span class="material-icons remeow"> repeat </span>' + value.Retweet_Count +
-                            '<span class="material-icons fav"> favorite_border </span>' + value.Fav_Count +
-                            '</div>' +
-                            '</div>' +
+                                    '<div class="postFooter">' +
+                                        '<span class="material-icons comment"> chat_bubble_outline </span>' + value.Comment_Count +
+                                        '<span class="material-icons remeow"> repeat </span>' + value.Retweet_Count +
+                                        '<span class="material-icons fav"> favorite_border </span>' + value.Fav_Count +
+                                    '</div>' +
+                                '</div>' +
                             '</div>'
                     });
                     $('#table').append(student);

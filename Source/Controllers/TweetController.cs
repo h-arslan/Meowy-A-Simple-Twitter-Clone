@@ -50,7 +50,7 @@ namespace Meowy.Controllers
                 Comment_Count = tweetDTO.Comment_Count,
                 Retweet_Count = tweetDTO.Retweet_Count,
                 Fav_Count = tweetDTO.Fav_Count,
-                Date = DateTime.Now
+                Date = DateTime.Now.Date
             };
 
             _context.Tweets.Add(tweet);
@@ -96,7 +96,7 @@ namespace Meowy.Controllers
                 Comment_Count = tweet.Comment_Count,
                 Retweet_Count = tweet.Retweet_Count,
                 Fav_Count = tweet.Fav_Count,
-                Date = DateTime.Now
+                Date = DateTime.Now.Date
             };
     }
     public class JSONReadWrite
