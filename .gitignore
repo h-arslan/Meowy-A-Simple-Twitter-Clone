@@ -1,9 +1,9 @@
 
+
 bin/
 .vs/
 obj/
 
-
-
-
-Source/obj/Debug/net6.0/Meowy.GeneratedMSBuildEditorConfig.editorconfig
+/obj/
+/Source/.vs/
+/Source/bin/
