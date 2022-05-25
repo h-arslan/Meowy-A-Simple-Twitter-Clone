@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
+using Microsoft.Data.SqlClient;
+using System.Data;
 
 namespace Meowy.Controllers
 {
@@ -10,6 +12,7 @@ namespace Meowy.Controllers
     public class UserController : ControllerBase
     {
         private readonly UserContext _context;
+        SqlConnection con = new SqlConnection();
 
         public UserController(UserContext context)
         {
@@ -40,6 +43,7 @@ namespace Meowy.Controllers
         [HttpPost]
         public async Task<ActionResult<UserDTO>> CreateUser(UserDTO userDTO)
         {
+            Guid id = new Guid();
             var user = new User
             {
                 Username = userDTO.Username,
@@ -54,6 +58,15 @@ namespace Meowy.Controllers
 
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
+
+            con.Open();
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            Console.WriteLine(id.ToString());
+            Console.WriteLine(user.Creation_Date.ToString());
+            cmd.CommandText = "INSERT INTO [User] values('" + id.ToString() + "', '" + user.Username + "', '" + user.Password + "', '" + user.Name + "','" + user.Surname + "','" + user.Email + "', '" + user.Birthdate.ToString() + "','" + user.Creation_Date.ToString() + "','" + user.Is_Priv + "')";
+            cmd.ExecuteNonQuery();
+            con.Close();
 
             JSONReadWrite readWrite = new JSONReadWrite();
             string jSONString = JsonConvert.SerializeObject(_context.Users);
