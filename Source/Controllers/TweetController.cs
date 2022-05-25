@@ -99,7 +99,6 @@ namespace Meowy.Controllers
                 Date = DateTime.Now
             };
     }
-    //control gitignore
     public class JSONReadWrite
     {
         public JSONReadWrite() { }
