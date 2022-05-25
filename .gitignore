@@ -1,3 +1,4 @@
-/obj/
-/Source/.vs/
-/Source/bin/
+
+bin/
+.vs/
+obj/
