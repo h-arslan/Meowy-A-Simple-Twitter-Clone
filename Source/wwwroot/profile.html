@@ -74,39 +74,38 @@
                     var student = '';
 
                     $.each(data, function (key, value) {
-                        student += '<div>' + value.Contents + '</div>';
+                        student +=
+                            '<div class="post">' +
+                            '<div class="postImage">' +
+                            '<img class="imageFeed" alt="Image" />' +
+                            '</div>' +
+
+                            '<div class="postBody">' +
+                            '<div class="postHeader">' + value.Date +
+                            '<div class="postUserInfo">' +
+                            '<h3>Name Surname <span class="postUsername"> username__  </span></h3>' +
+                            '</div>' +
+
+                            '<div class="postContent">'
+                            + value.Contents +
+                            '</div>' +
+                            '</div>' +
+
+                            '<div class="postFooter">' +
+                            '<span class="material-icons comment"> chat_bubble_outline </span>' + value.Comment_Count +
+                            '<span class="material-icons remeow"> repeat </span>' + value.Retweet_Count +
+                            '<span class="material-icons fav"> favorite_border </span>' + value.Fav_Count +
+                            '</div>' +
+                            '</div>' +
+                            '</div>'
                     });
                     $('#table').append(student);
                 });
             });
         </script>
 
-        <!--post starts-->
-        <div class="post">
-            <div class="postImage">
-                <img class="imageFeed" alt="Image" />
-            </div>
+        <div id="table"></div>
 
-            <div class="postBody">
-                <div class="postHeader">
-
-                    <div class="postUserInfo">
-                        <h3>Name Surname <span class="postUsername"> username__  </span></h3>
-                    </div>
-
-                    <div class="postContent" id="table">
-                        
-                    </div>
-                </div>
-
-                <div class="postFooter">
-                    <span class="material-icons comment"> chat_bubble_outline </span>
-                    <span class="material-icons remeow"> repeat </span>
-                    <span class="material-icons fav"> favorite_border </span>
-                </div>
-            </div>
-        </div>
-        <!--post ends-->
     </div>
     <!--feed ends-->
 
