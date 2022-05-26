@@ -34,40 +34,46 @@ This document is the requirements documentation of the simple twitter clone appl
   *	For running environment Docker containers will be used.  
 
 #### 3.User Stories/Functional Specifications  
-- The user creates his personal account with the account creation interface and logs in with his e-mail and password.  
-- The user, who is logged into account, can create, delete and read the shared posts.  
-- The user can filter the posts by date and the word they contain, and can also search for other users in the application.
+User story 1: As a user, I can log in to my own account using username and password from the “sign in” page when I open the application. If I don't have an account, I can create a new account by clicking the sign-up button. The first part that comes up after logging in is the “home page”. Each page has a menu bar on the left and a small explore section on the right. I can fill in the text box in the middle of the home page, create a new post and see the posts of the users I have followed.
+
+User story 2: As a user, when I click on the “explore” from the menu bar, I see trending topics on the page that opens. When I click on these topics, I can see the most popular posts shared on this topics. When I type the word I want to search for in the search field at the top, I can see the shared posts using this word. On the right side of each page there are small explore sections that serve the same function as this section.
+
+User story 3: As a user, when I go to the “messages page”, I see the messages that other users send me. When I click on the chat box, I can see the message history, write new messages, and send them.
+
+User story 4: When I enter the “follow request page” as a user, I can see the follow requests I receive. I can reject or accept these requests. The follow-follower system allows me to choose the people whose posts I want to see and the people I want to share my posts. Users who follow me can see, like and comment on my posts.
+
+User story 5: As a user, when I click on the “profile” option in the menu bar, I can see my own posts (meows), comments, posts of other people I have shared (remeows), and posts I like. The comment, remeow and like numbers of all posts are also written at the bottom of each post. On any page, when I click on the profile image in the lower left corner, I will be redirected to my profile page.
+
+User story 6: When I enter the “settings page” as a user, I see two parts as “account” and “security”. Account is the option that contains the exchange settings for account information. When I click on “account information”, I can change properties such as username, name, surname. When I click “change password”, I can change my password. When I click on “close account”, I can close my account.
+The Security option includes the privacy settings of the account. In this section, the account can be set to private. When I change the mode to private mode, my posts can only be observed by people who follow me. when my account isn't in private mode, my posts are public.
 
 #### 4.Database Design  
 ![image](https://user-images.githubusercontent.com/75277382/161128270-0a6ea861-ff6c-4ecb-a991-a01478b55692.png)
 
 #### 5.Mock UI Screens
->Login page
-![Sign_In_Up](https://user-images.githubusercontent.com/96079325/161149473-548d6f51-6691-4fb6-bb3c-b67b1650a86b.png)
+>Sign-in Page
+![1 signin](https://user-images.githubusercontent.com/96079325/170479437-06ca2cf1-b266-4da9-87cf-282d87818dd5.png)
+
+>Sign-up Page
+![2 signup](https://user-images.githubusercontent.com/96079325/170479482-66f32fa3-156d-4017-a27e-aed2773201e1.png)
 
 >Home page
-![1_home_page](https://user-images.githubusercontent.com/96079325/161149341-a2bc318a-5513-4870-84b4-5e8fd0163cbe.png)
+![3 home](https://user-images.githubusercontent.com/96079325/170479502-89bc3050-4e4e-4c53-8538-c654634cd291.png)
 
->Discover
-![2_discover](https://user-images.githubusercontent.com/96079325/161149547-21d7d550-9bf7-490c-9de1-f3a0c88f7eb3.png)
+>Explore
+![4 explore](https://user-images.githubusercontent.com/96079325/170479547-40fe5341-cbaa-46b0-b9c1-a4660c4baa01.png)
 
 >Messages
-![3_messages](https://user-images.githubusercontent.com/96079325/161149562-c5aa3c2e-4130-4dc5-9959-79a7cf8eaae0.png)
-
->Notifications
-![3_notifications](https://user-images.githubusercontent.com/96079325/161149573-8df4d668-ca43-4212-9749-61518b92b916.png)
-
->Place marks
-![5_place_marks](https://user-images.githubusercontent.com/96079325/161149588-bb5f7965-073a-4d4d-9253-e973b6510ca5.png)
+![5 messages](https://user-images.githubusercontent.com/96079325/170479574-53116133-e3cb-43f0-90ce-0739992b6cb7.png)
 
 >Follow requests
-![6_follow_req](https://user-images.githubusercontent.com/96079325/161149594-cbc76257-069d-40b9-8e19-998e8ae7f9fb.png)
+![6 follow](https://user-images.githubusercontent.com/96079325/170479617-18113536-97d8-4970-aca7-6c7e413d762d.png)
 
 >Profile
-![7_profile](https://user-images.githubusercontent.com/96079325/161149609-7d81dfee-1ff8-434b-a6ba-3b82b0719848.png)
+![7 profile](https://user-images.githubusercontent.com/96079325/170479654-217292ad-c248-4570-93e2-2beb99a2a23c.png)
 
 >Settings
-![8_settings](https://user-images.githubusercontent.com/96079325/161149617-c45328dc-ec5b-477f-a211-7f36cba53073.png)
+![8 sett](https://user-images.githubusercontent.com/96079325/170479685-02c42581-3b56-4d98-ab99-e006ce28bdf5.png)
 
 #### 6.Approval/Review Date  
 31.03.2022
