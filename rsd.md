@@ -33,7 +33,13 @@ This document is the requirements documentation of the simple twitter clone appl
   *	As a database server SQL SERVER and to edit and design visually, Microsoft SQL Server Management Studio will be used.   
   *	For running environment Docker containers will be used.  
 
-#### 3.User Stories/Functional Specifications  
+#### 3.User Stories/Functional Specifications
+A brief terminology for Twitter clone we created under the name Meowy.
+Meow: Posts that users have written and shared. (tweet) 
+Remeow: When users re-share post that someone else has shared (retweet)
+Comment: Posts written specifically to one of the shared post.
+Follow request: A request notification that users send to each other so they can see the content they've shared.
+
 User story 1: As a user, I can log in to my own account using username and password from the “sign in” page when I open the application. If I don't have an account, I can create a new account by clicking the sign-up button. The first part that comes up after logging in is the “home page”. Each page has a menu bar on the left and a small explore section on the right. I can fill in the text box in the middle of the home page, create a new post and see the posts of the users I have followed.
 
 User story 2: As a user, when I click on the “explore” from the menu bar, I see trending topics on the page that opens. When I click on these topics, I can see the most popular posts shared on this topics. When I type the word I want to search for in the search field at the top, I can see the shared posts using this word. On the right side of each page there are small explore sections that serve the same function as this section.
