@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
           integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
           crossorigin="anonymous">
+
+    <script src="js/func.js"></script>
 </head>
 
 <body>
@@ -24,9 +26,9 @@
                 <h2>Sign In to Meowy</h2>
 
                 <div class="username">
-                    Username / E-Mail <br>
+                    Username<br>
                     <div class="input">
-                        <input type="text">
+                        <input type="text" id="myUsername">
                     </div>
                 </div>
                 <div class="password">
@@ -40,7 +42,7 @@
                 </div>
             </div>
             <div class="signin-btn">
-                <button>SIGN IN</button>
+                <input type="submit" value="SIGN IN" onclick="check()">
             </div>
             <div class="signup-btn">
                 <p>Don't have an account yet?</p>
