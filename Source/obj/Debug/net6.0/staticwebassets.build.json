@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uKIcWsoYFl7BWGgtsUFc/Gewrb5Ma02q6d0tj4wyFHo=",
+  "Hash": "wSPuuWBVXR17U+fnZnrbqfXGH/VkVbp908AjqhtRF6w=",
   "Source": "Meowy",
   "BasePath": "_content/Meowy",
   "Mode": "Default",
@@ -168,6 +168,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\Source\\wwwroot\\js\\func.js",
+      "SourceId": "Meowy",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\Source\\wwwroot\\",
+      "BasePath": "_content/Meowy",
+      "RelativePath": "js/func.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\func.js"
     },
     {
       "Identity": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\Source\\wwwroot\\js\\tweet.js",

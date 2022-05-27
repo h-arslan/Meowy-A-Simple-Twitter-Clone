@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace Meowy.Controllers
 {   
@@ -10,6 +12,7 @@ namespace Meowy.Controllers
     public class TweetController : ControllerBase
     {
         private readonly TweetContext _context;
+        SqlConnection con = new SqlConnection("Data Source=DESKTOP-BNRKNMI\\SQLEXPRESS;Initial Catalog=Meowy_Twitter_Clone;Integrated Security=True");
 
         public TweetController(TweetContext context)
         {
@@ -50,11 +53,18 @@ namespace Meowy.Controllers
                 Comment_Count = tweetDTO.Comment_Count,
                 Retweet_Count = tweetDTO.Retweet_Count,
                 Fav_Count = tweetDTO.Fav_Count,
-                Date = DateTime.Now.Date
+                Date = DateTime.Now
             };
 
             _context.Tweets.Add(tweet);
             await _context.SaveChangesAsync();
+
+            con.Open();
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "INSERT INTO [Tweet] values('" + tweet.Id + "', '" + tweet.User_Id + "', '" + tweet.Contents + "', '" + tweet.Comment_Count + "','" + tweet.Retweet_Count + "','" + tweet.Fav_Count + "', '" + tweet.Date.ToString() + "')";
+            cmd.ExecuteNonQuery();
+            con.Close();
 
             JSONReadWrite readWrite = new JSONReadWrite();
             string jSONString = JsonConvert.SerializeObject(_context.Tweets);
@@ -96,7 +106,7 @@ namespace Meowy.Controllers
                 Comment_Count = tweet.Comment_Count,
                 Retweet_Count = tweet.Retweet_Count,
                 Fav_Count = tweet.Fav_Count,
-                Date = DateTime.Now.Date
+                Date = DateTime.Now
             };
     }
     public class JSONReadWrite
