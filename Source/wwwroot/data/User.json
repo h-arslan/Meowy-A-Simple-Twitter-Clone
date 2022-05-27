@@ -1,14 +1,1 @@
-[
-  
-  {
-    "Id": 1,
-    "Username": "123fez",
-    "Password": "f",
-    "Name": "Feyza",
-    "Surname": "Decdeli",
-    "Email": "f",
-    "Birthdate": "0001-01-01T00:00:00",
-    "Creation_Date": "2022-05-27T22:22:56.0262191+03:00",
-    "Is_Priv": false
-  }
-]
+[{"Id":1,"Username":"a","Password":"a","Name":"a","Surname":"a","Email":"a","Birthdate":"0001-01-01T00:00:00","Creation_Date":"2022-05-27T23:19:01.0664299+03:00","Is_Priv":false}]

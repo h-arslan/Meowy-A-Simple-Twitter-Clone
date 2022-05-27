@@ -5,99 +5,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home / Meowy</title>
+    <title>Sign In / Meowy</title>
+    <link rel="stylesheet" href="/css/signin.css">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
           integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
           crossorigin="anonymous">
-
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/tweet.js"></script>
 </head>
 
 <body>
-    <!--sidebar starts-->
-    <div class="sidebar">
-        <i class="fas fa-cat"></i>
-        <div class="sidebarOption" onclick="window.location.href='index.html'">
-            <span class="material-icons"> home </span>
-            <h2>Home</h2>
+    <div class="row">
+        <div class="column1">
+            <i class="fas fa-cat"></i>
         </div>
-        <div class="sidebarOption" onclick="window.location.href='explore.html'">
-            <span class="material-icons"> tag </span>
-            <h2>Explore</h2>
-        </div>
-        <div class="sidebarOption" onclick="window.location.href='messages.html'">
-            <span class="material-icons"> mail_outline </span>
-            <h2>Messages</h2>
-        </div>
-        <div class="sidebarOption" onclick="window.location.href='followreq.html'">
-            <span class="material-icons"> list </span>
-            <h2>Follow Requests</h2>
-        </div>
-        <div class="sidebarOption" onclick="window.location.href='profile.html'">
-            <span class="material-icons"> perm_identity </span>
-            <h2>Profile</h2>
-        </div>
-        <div class="sidebarOption" onclick="window.location.href='settings.html'">
-            <span class="material-icons"> more_horiz </span>
-            <h2>Settings</h2>
-        </div>
+        <div class="column2">
+            <div class="texts">
+                <h2>Sign In to Meowy</h2>
 
-        <img class="image" alt="Image" />
-        <div class="profileName">
-            username__
-        </div>
-
-        <button class="sidebarMeow" onclick="window.location.href='signin.html'">signin</button>
-    </div>
-    <!--sidebar ends-->
-
-    <!--feed starts-->
-    <div class="feed">
-        <div class="feedHeader">
-            <h2>Home</h2>
-        </div>
-
-        <!--meow box starts-->
-        <div class="meowBox">
-            <form action="javascript:void(0);" method="POST" onsubmit="addTweet()">
-                <div class="meowInput">
-                    <img class="imageFeed" alt="Image" />
-                    <input type="text" placeholder="What's happening?" id="meow_input" oninput="meowButton()"> <br />
+                <div class="username">
+                    Username / E-Mail <br>
+                    <div class="input">
+                        <input type="text">
+                    </div>
                 </div>
-                <input class="meowButton" id="meow_button" type="submit" value="Meow">
-            </form>
-        </div>
-        <!--meow box ends-->
-    </div>
-    <!--feed ends-->
+                <div class="password">
+                    Password <br>
+                    <div class="input">
+                        <input type="password" id="myPassword">
+                    </div>
+                    <div class="input2">
+                        <input type="checkbox" onclick="showPassword()"> Show Password
+                    </div>
+                </div>
+            </div>
+            <div class="signin-btn">
+                <button>SIGN IN</button>
+            </div>
+            <div class="signup-btn">
+                <p>Don't have an account yet?</p>
+                <button onclick="window.location.href='signup.html'">Sign Up</button>
+            </div>
 
-    <!--widget starts-->
-    <div class="widgets">
-        <div class="searchInput">
-            <span class="material-icons searchIcon"> search</span>
-            <input type="text" placeholder="Search Meowy">
-        </div>
-
-        <div class="widgetContainer">
-            <h2>Trends for you</h2>
-            <blockquote class="tags">
-            </blockquote>
         </div>
     </div>
-    <!--widget ends-->
+
 </body>
 
 <script>
-    function meowButton() {
-        var inp = document.getElementById("meow_input");//meow input
-        var btn = document.getElementById("meow_button");
-        if (inp.value == null || inp.value == "") {
-            btn.style.backgroundColor = "#8daec0";
+    function showPassword() {
+        var x = document.getElementById("myPassword");
+        if (x.type === "password") {
+            x.type = "text";
         } else {
-            btn.style.backgroundColor = "#1C658C";
+            x.type = "password";
         }
     }
 </script>
