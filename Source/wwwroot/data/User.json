@@ -2,13 +2,13 @@
   
   {
     "Id": 1,
-    "Username": "fd",
-    "Password": "123!a",
-    "Name": "fez",
-    "Surname": "dec",
-    "Email": "f@h.c",
+    "Username": "123fez",
+    "Password": "f",
+    "Name": "Feyza",
+    "Surname": "Decdeli",
+    "Email": "f",
     "Birthdate": "0001-01-01T00:00:00",
-    "Creation_Date": "2022-05-13T01:10:42.9872836+03:00",
+    "Creation_Date": "2022-05-27T22:22:56.0262191+03:00",
     "Is_Priv": false
   }
 ]
