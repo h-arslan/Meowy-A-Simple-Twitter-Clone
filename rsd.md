@@ -54,7 +54,7 @@ User story 6: When I enter the “settings page” as a user, I see two parts as
 The Security option includes the privacy settings of the account. In this section, the account can be set to private. When I change the mode to private mode, my posts can only be observed by people who follow me. when my account isn't in private mode, my posts are public.
 
 #### 4.Database Design  
-![image]![image](https://user-images.githubusercontent.com/75277382/170879711-8ff929e8-d976-41d0-8374-b8b0ae4f3c36.png)
+![image](https://user-images.githubusercontent.com/75277382/170879711-8ff929e8-d976-41d0-8374-b8b0ae4f3c36.png)
 
 #### 5.Mock UI Screens
 >Sign-in Page
