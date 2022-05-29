@@ -30,7 +30,7 @@ namespace Meowy.Controllers
 
         // GET: api/tweet/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<TweetDTO>> GetTweet(long id)
+        public async Task<ActionResult<TweetDTO>> GetTweet(Guid id)
         {
             var tweet = await _context.Tweets.FindAsync(id);
 
@@ -62,7 +62,7 @@ namespace Meowy.Controllers
             con.Open();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "INSERT INTO [Tweet] values('" + tweet.Id + "', '" + tweet.User_Id + "', '" + tweet.Contents + "', '" + tweet.Comment_Count + "','" + tweet.Retweet_Count + "','" + tweet.Fav_Count + "', '" + tweet.Date.ToString() + "')";
+            cmd.CommandText = "INSERT INTO [Tweet] values('" + tweet.Id + "', '" + tweet.User_Id + "', '" + tweet.Contents + "', '" + tweet.Comment_Count + "','" + tweet.Retweet_Count + "','" + tweet.Fav_Count + "', '" + tweet.Date + "')";
             cmd.ExecuteNonQuery();
             con.Close();
 
@@ -78,7 +78,7 @@ namespace Meowy.Controllers
 
         // DELETE: api/tweet/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteTweet(long id)
+        public async Task<IActionResult> DeleteTweet(Guid id)
         {
             var tweet = await _context.Tweets.FindAsync(id);
             if (tweet == null)
@@ -92,14 +92,14 @@ namespace Meowy.Controllers
             return NoContent();
         }
 
-        private bool TweetExists(long id)
+        private bool TweetExists(Guid id)
         {
             return _context.Tweets.Any(e => e.Id == id);
         }
 
         private static TweetDTO ItemToDTO(Tweet tweet) =>
             new TweetDTO
-            {
+            {   
                 Id = tweet.Id,
                 User_Id = tweet.User_Id,
                 Contents = tweet.Contents,

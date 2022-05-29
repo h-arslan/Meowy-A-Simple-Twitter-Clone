@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Source",
+    "\\Source\\Controllers"
   ],
-  "SelectedNode": "\\Meowy.sln",
+  "SelectedNode": "\\Source\\Controllers\\UserController.cs",
   "PreviewInSolutionExplorer": false
 }
