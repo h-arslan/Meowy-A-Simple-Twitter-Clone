@@ -89,7 +89,7 @@ body {
     text-align: center;
 }
 
-.signin-btn button {
+.signin-btn input {
     background-color: var(--meowy-color2);
     border: none;
     border-radius: 30px;

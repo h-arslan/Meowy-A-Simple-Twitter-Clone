@@ -15,13 +15,15 @@
     <link rel="stylesheet" href="css/style.css">
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/tweet.js" asp-append-version="true"></script>
+
 </head>
 
 <body>
     <!--sidebar starts-->
     <div class="sidebar">
         <i class="fas fa-cat"></i>
-        <div class="sidebarOption" onclick="window.location.href='index.html'">
+        <div class="sidebarOption" onclick="window.location.href='home.html'">
             <span class="material-icons"> home </span>
             <h2>Home</h2>
         </div>
@@ -68,7 +70,7 @@
 
         <script>
             $(document).ready(function () {
-                $.getJSON("data/Tweet.json", function (data) {
+                $.getJSON('http://localhost:5125/api/Tweet', function (data) {
                     var student = '';
 
                     $.each(data, function (key, value) {
@@ -81,18 +83,18 @@
                                 '<div class="postBody">' +
                                     '<div class="postHeader">' +
                                         '<div class="postUserInfo">' +
-                                            '<h3>Name Surname <span class="postUsername"> username__</span>' + '<a>'+value.Date+'</a></h3>' +
+                                            '<h3>Name Surname <span class="postUsername"> username__</span>' + '<a>'+value.date+'</a></h3>' +
                                         '</div>' +
 
                                         '<div class="postContent">'
-                                            + value.Contents +
+                                            + value.contents +
                                         '</div>' +
                                     '</div>' +
 
                                     '<div class="postFooter">' +
-                                        '<span class="material-icons comment"> chat_bubble_outline </span>' + value.Comment_Count +
-                                        '<span class="material-icons remeow"> repeat </span>' + value.Retweet_Count +
-                                        '<span class="material-icons fav"> favorite_border </span>' + value.Fav_Count +
+                                        '<span class="material-icons comment"> chat_bubble_outline </span>' + value.comment_Count +
+                                        '<span class="material-icons remeow"> repeat </span>' + value.retweet_Count +
+                                        '<span class="material-icons fav"> favorite_border </span>' + value.fav_Count +
                                     '</div>' +
                                 '</div>' +
                             '</div>'

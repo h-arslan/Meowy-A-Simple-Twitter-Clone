@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile / Meowy</title>
+    <title>Home / Meowy</title>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -13,8 +13,7 @@
           crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/style.css">
-
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/tweet.js"></script>
 </head>
 
 <body>
@@ -29,7 +28,7 @@
             <span class="material-icons"> tag </span>
             <h2>Explore</h2>
         </div>
-         <div class="sidebarOption" onclick="window.location.href='messages.html'">
+        <div class="sidebarOption" onclick="window.location.href='messages.html'">
             <span class="material-icons"> mail_outline </span>
             <h2>Messages</h2>
         </div>
@@ -50,22 +49,28 @@
         <div class="profileName">
             username__
         </div>
+
+        <button class="sidebarMeow" onclick="window.location.href='index.html'">signin</button>
     </div>
     <!--sidebar ends-->
 
     <!--feed starts-->
     <div class="feed">
         <div class="feedHeader">
-            <h2>Profile</h2>
+            <h2>Home</h2>
         </div>
 
-        <div class="profileMenu">
-            <button onclick="window.location.href='profile.html'">Meows</button>
-            <button onclick="window.location.href='profile_comments.html'">Comments</button>
-            <button onclick="window.location.href='profile_remeows.html'">Remeows</button>
-            <button>Likes</button>
+        <!--meow box starts-->
+        <div class="meowBox">
+            <form action="javascript:void(0);" method="POST" onsubmit="addTweet()">
+                <div class="meowInput">
+                    <img class="imageFeed" alt="Image" />
+                    <input type="text" placeholder="What's happening?" id="meow_input" oninput="meowButton()"> <br />
+                </div>
+                <input class="meowButton" id="meow_button" type="submit" value="Meow">
+            </form>
         </div>
-        likes
+        <!--meow box ends-->
     </div>
     <!--feed ends-->
 
@@ -84,5 +89,17 @@
     </div>
     <!--widget ends-->
 </body>
+
+<script>
+    function meowButton() {
+        var inp = document.getElementById("meow_input");//meow input
+        var btn = document.getElementById("meow_button");
+        if (inp.value == null || inp.value == "") {
+            btn.style.backgroundColor = "#8daec0";
+        } else {
+            btn.style.backgroundColor = "#1C658C";
+        }
+    }
+</script>
 
 </html>

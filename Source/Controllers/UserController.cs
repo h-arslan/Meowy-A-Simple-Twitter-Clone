@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
-using Microsoft.Data.SqlClient;
+using System.Data.SqlClient;
 using System.Data;
 
 namespace Meowy.Controllers
@@ -12,7 +12,8 @@ namespace Meowy.Controllers
     public class UserController : ControllerBase
     {
         private readonly UserContext _context;
-        SqlConnection con = new SqlConnection();
+
+        SqlConnection con = new SqlConnection("Data Source=LAPTOP-499DOHOD\\SQLEXPRESS;Initial Catalog=meowy;Integrated Security=True");
 
         public UserController(UserContext context)
         {
@@ -28,7 +29,7 @@ namespace Meowy.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<UserDTO>> GetUser(long id)
+        public async Task<ActionResult<UserDTO>> GetUser(Guid id)
         {
             var user = await _context.Users.FindAsync(id);
 
@@ -41,9 +42,8 @@ namespace Meowy.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<UserDTO>> CreateUser(UserDTO userDTO)
-        {
-            Guid id = new Guid();
+        public async Task<ActionResult<UserDTO>> CreateUser(UserDTO userDTO) {
+
             var user = new User
             {
                 Username = userDTO.Username,
@@ -59,27 +59,22 @@ namespace Meowy.Controllers
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
 
-            con.Open();
+            Console.WriteLine(user.Birthdate);
+            con.Open();            
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            Console.WriteLine(id.ToString());
-            Console.WriteLine(user.Creation_Date.ToString());
-            cmd.CommandText = "INSERT INTO [User] values('" + id.ToString() + "', '" + user.Username + "', '" + user.Password + "', '" + user.Name + "','" + user.Surname + "','" + user.Email + "', '" + user.Birthdate.ToString() + "','" + user.Creation_Date.ToString() + "','" + user.Is_Priv + "')";
+            cmd.CommandText = "INSERT INTO [User] values('" + user.Id + "', '" + user.Username + "', '" + user.Email + "', '" + user.Password + "','" + user.Name + "','" + user.Surname + "', '" + user.Birthdate.ToString("yyyy-MM-dd HH:mm:ss") + "','" + user.Creation_Date.ToString("yyyy-MM-dd HH:mm:ss") + "','" + user.Is_Priv + "')";
             cmd.ExecuteNonQuery();
             con.Close();
 
-            JSONReadWrite readWrite = new JSONReadWrite();
-            string jSONString = JsonConvert.SerializeObject(_context.Users);
-            readWrite.Write("User.json", "data", jSONString);
-
             return CreatedAtAction(
                 nameof(GetUser),
-                new { id = user.Id },
+                new {id = user.Id },
                 ItemToDTO(user));
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteUser(long id)
+        public async Task<IActionResult> DeleteUser(Guid id)
         {
             var user = await _context.Users.FindAsync(id);
             if (user == null)
@@ -93,14 +88,14 @@ namespace Meowy.Controllers
             return NoContent();
         }
 
-        private bool UserExists(long id)
+        private bool UserExists(Guid id)
         {
             return _context.Users.Any(e => e.Id == id);
         }
 
         private static UserDTO ItemToDTO(User user) =>
             new UserDTO
-            {
+            {                
                 Id = user.Id,
                 Username = user.Username,
                 Password = user.Password,
