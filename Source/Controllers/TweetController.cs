@@ -12,8 +12,8 @@ namespace Meowy.Controllers
     public class TweetController : ControllerBase
     {
         private readonly TweetContext _context;
-        SqlConnection con = new SqlConnection("Data Source=LAPTOP-499DOHOD\\SQLEXPRESS;Initial Catalog=meowy;Integrated Security=True");
-
+        SqlConnection con = new SqlConnection("Data Source=DESKTOP-MJOVOSF\\SQLEXPRESS;Initial Catalog=Meowy_Twitter_Clone;Integrated Security=True");
+        //merhaba feyza
         public TweetController(TweetContext context)
         {
             _context = context;
@@ -27,7 +27,7 @@ namespace Meowy.Controllers
             List<TweetDTO> tweets = new List<TweetDTO>();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "SELECT TOP (1000) [id],[userid],[tweetcontent],[cmtcount],[rtcount],[favct],[crdate] FROM[meowy].[dbo].[Tweet]";
+            cmd.CommandText = "SELECT TOP (1000) [id],[user_id],[contents],[comment_count],[retweet_count],[fav_count],[date] FROM[Meowy_Twitter_Clone].[dbo].[Tweet]";
             
             using (SqlDataReader reader = cmd.ExecuteReader())
             {

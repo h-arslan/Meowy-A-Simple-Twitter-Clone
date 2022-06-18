@@ -13,7 +13,7 @@ namespace Meowy.Controllers
     {
         private readonly UserContext _context;
 
-        SqlConnection con = new SqlConnection("Data Source=LAPTOP-499DOHOD\\SQLEXPRESS;Initial Catalog=meowy;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=DESKTOP-MJOVOSF\\SQLEXPRESS;Initial Catalog=Meowy_Twitter_Clone;Integrated Security=True");
 
         public UserController(UserContext context)
         {
