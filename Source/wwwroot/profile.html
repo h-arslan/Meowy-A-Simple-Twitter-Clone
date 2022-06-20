@@ -13,7 +13,7 @@
           crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/style.css">
-
+    <script src="js/func.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="js/tweet.js" asp-append-version="true"></script>
 
@@ -83,7 +83,7 @@
                                 '<div class="postBody">' +
                                     '<div class="postHeader">' +
                                         '<div class="postUserInfo">' +
-                                            '<h3>Name Surname <span class="postUsername"> username__</span>' + '<a>'+value.date+'</a></h3>' +
+                                            '<h3>Name Surname <span class="postUsername"> username__</span>' + '<a>' + value.date + '</a></h3>' +
                                         '</div>' +
 
                                         '<div class="postContent">'
@@ -95,8 +95,10 @@
                                         '<span class="material-icons comment"> chat_bubble_outline </span>' + value.comment_Count +
                                         '<span class="material-icons remeow"> repeat </span>' + value.retweet_Count +
                                         '<span class="material-icons fav"> favorite_border </span>' + value.fav_Count +
-                                    '</div>' +
-                                '</div>' +
+                                    '</div>' + 
+
+                        '</div>' +
+                        '<div class="material-icons" id="delete-tweet" onclick="deleteTweet(\'' + value.id + '\')"> delete </div>' +
                             '</div>'
                     });
                     $('#table').append(student);

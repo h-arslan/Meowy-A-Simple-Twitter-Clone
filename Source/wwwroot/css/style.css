@@ -228,10 +228,16 @@ body {
 }
 
 .postImage {
-    padding: 15px;
-    padding-top: 20px;
+    padding: 10px;
 }
 
+#delete-tweet {
+    color:  red;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px;
+}
 /**** profile ****/
 .imageProfile {
     content: url("https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png");

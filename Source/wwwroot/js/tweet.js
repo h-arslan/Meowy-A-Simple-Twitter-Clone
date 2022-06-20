@@ -31,3 +31,11 @@ function addTweet() {
         .catch(error => console.error('Unable to add item.', error));
 }
 
+function deleteTweet(id) {
+    fetch(`${uri}/${id}`, {
+        method: 'DELETE'
+    })
+        .then(() => console.log(id))
+        .catch(error => console.error('Unable to delete item.', error));
+}
+

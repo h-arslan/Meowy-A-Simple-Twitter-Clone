@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Source",
+    "\\Source\\Controllers",
+    "\\Source\\wwwroot"
   ],
-  "SelectedNode": "\\Meowy.sln",
+  "SelectedNode": "\\Source\\Controllers\\TweetController.cs",
   "PreviewInSolutionExplorer": false
 }

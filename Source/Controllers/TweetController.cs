@@ -12,7 +12,7 @@ namespace Meowy.Controllers
     public class TweetController : ControllerBase
     {
         private readonly TweetContext _context;
-        SqlConnection con = new SqlConnection("Data Source=DESKTOP-MJOVOSF\\SQLEXPRESS;Initial Catalog=Meowy_Twitter_Clone;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=DESKTOP-BNRKNMI\\SQLEXPRESS;Initial Catalog=Meowy_Twitter_Clone;Integrated Security=True");
         //merhaba feyza
         public TweetController(TweetContext context)
         {
@@ -27,17 +27,15 @@ namespace Meowy.Controllers
             List<TweetDTO> tweets = new List<TweetDTO>();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "SELECT TOP (1000) [id],[user_id],[contents],[comment_count],[retweet_count],[fav_count],[date] FROM[Meowy_Twitter_Clone].[dbo].[Tweet]";
+            cmd.CommandText = "SELECT * FROM[Meowy_Twitter_Clone].[dbo].[Tweet]";
             
             using (SqlDataReader reader = cmd.ExecuteReader())
             {
                 while (reader.Read())
-
-                {   
-                        
+                {                      
                     TweetDTO tweetDTO = new TweetDTO();
                     tweetDTO.Id = Guid.Parse(reader.GetGuid(0).ToString());
-                    tweetDTO.User_Id = Guid.Parse(reader.GetGuid(0).ToString());
+                    tweetDTO.User_Id = Guid.Parse(reader.GetGuid(1).ToString());
                     tweetDTO.Contents =  reader.GetString(2);
                     tweetDTO.Comment_Count = reader.GetInt32(3);
                     tweetDTO.Retweet_Count = reader.GetInt32(4);
@@ -56,15 +54,32 @@ namespace Meowy.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<TweetDTO>> GetTweet(Guid id)
         {
-            var tweet = await _context.Tweets.FindAsync(id);
+            con.Open();
+            TweetDTO t = new TweetDTO();
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT * FROM[Meowy_Twitter_Clone].[dbo].[Tweet] WHERE Id = @id";
+            cmd.Parameters.Add("@id", SqlDbType.UniqueIdentifier, 200).Value = id;
 
-            if (tweet == null)
+            using (SqlDataReader reader = cmd.ExecuteReader())
             {
-                return NotFound();
+                while (reader.Read())
+                {
+                    TweetDTO tweetDTO = new TweetDTO();
+                    tweetDTO.Id = Guid.Parse(reader.GetGuid(0).ToString());
+                    tweetDTO.User_Id = Guid.Parse(reader.GetGuid(1).ToString());
+                    tweetDTO.Contents = reader.GetString(2);
+                    tweetDTO.Comment_Count = reader.GetInt32(3);
+                    tweetDTO.Retweet_Count = reader.GetInt32(4);
+                    tweetDTO.Fav_Count = reader.GetInt32(5);
+                    tweetDTO.Date = reader.GetDateTime(6);
+                    string jsonvar = System.Text.Json.JsonSerializer.Serialize(tweetDTO);
+                    t = tweetDTO;
+                }
             }
+            con.Close();
 
-
-            return ItemToDTO(tweet);
+            return t;
         }
 
         // POST: api/tweet
@@ -91,36 +106,35 @@ namespace Meowy.Controllers
             cmd.ExecuteNonQuery();
             con.Close();
 
-            JSONReadWrite readWrite = new JSONReadWrite();
-            string jSONString = JsonConvert.SerializeObject(_context.Tweets);
-            readWrite.Write("Tweet.json", "data", jSONString);
-
             return CreatedAtAction(
                 nameof(GetTweet),
                 new { id = tweet.Id },
                 ItemToDTO(tweet));
         }
 
-        // DELETE: api/tweet/5
+        //DELETE: api/tweet/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteTweet(Guid id)
         {
-            var tweet = await _context.Tweets.FindAsync(id);
-            if (tweet == null)
-            {
-                return NotFound();
-            }
+            con.Open();
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "DELETE FROM[Meowy_Twitter_Clone].[dbo].[Tweet] WHERE Id = @id";
+            cmd.Parameters.Add("@id", SqlDbType.UniqueIdentifier, 200).Value = id;
+            con.Close();
 
-            _context.Tweets.Remove(tweet);
-            await _context.SaveChangesAsync();
+            //var tweet = await _context.Tweets.FindAsync(id);
+            //if (tweet == null)
+            //{
+            //    return NotFound();
+            //}
+
+            //_context.Tweets.Remove(tweet);
+            //await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool TweetExists(Guid id)
-        {
-            return _context.Tweets.Any(e => e.Id == id);
-        }
 
         private static TweetDTO ItemToDTO(Tweet tweet) =>
             new TweetDTO
@@ -134,42 +148,4 @@ namespace Meowy.Controllers
                 Date = DateTime.Now
             };
     }
-    public class JSONReadWrite
-    {
-        public JSONReadWrite() { }
-
-        public string Read(string fileName, string location)
-        {
-            string root = "wwwroot";
-            var path = Path.Combine(
-            Directory.GetCurrentDirectory(),
-            root,
-            location,
-            fileName);
-
-            string jsonResult;
-
-            using (StreamReader streamReader = new StreamReader(path))
-            {
-                jsonResult = streamReader.ReadToEnd();
-            }
-            return jsonResult;
-        }
-
-        public void Write(string fileName, string location, string jSONString)
-        {
-            string root = "wwwroot";
-            var path = Path.Combine(
-            Directory.GetCurrentDirectory(),
-            root,
-            location,
-            fileName);
-
-            using (var streamWriter = File.CreateText(path))
-            {
-                streamWriter.Write(jSONString);
-            }
-        }
-    }
-
 }
