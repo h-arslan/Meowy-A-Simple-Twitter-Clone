@@ -11,8 +11,9 @@ namespace Meowy.Controllers
     [ApiController]
     public class TweetController : ControllerBase
     {
+        List<TweetDTO> tweets = new List<TweetDTO>();
         private readonly TweetContext _context;
-        SqlConnection con = new SqlConnection("Data Source=DESKTOP-BNRKNMI\\SQLEXPRESS;Initial Catalog=Meowy_Twitter_Clone;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=DESKTOP-MJOVOSF\\SQLEXPRESS;Initial Catalog=Meowy_Twitter_Clone;Integrated Security=True");
         //merhaba feyza
         public TweetController(TweetContext context)
         {
@@ -121,18 +122,27 @@ namespace Meowy.Controllers
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = "DELETE FROM[Meowy_Twitter_Clone].[dbo].[Tweet] WHERE Id = @id";
             cmd.Parameters.Add("@id", SqlDbType.UniqueIdentifier, 200).Value = id;
+
+            using (SqlDataReader reader = cmd.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    TweetDTO tweetDTO = new TweetDTO();
+                    tweetDTO.Id = Guid.Parse(reader.GetGuid(0).ToString());
+                    tweetDTO.User_Id = Guid.Parse(reader.GetGuid(1).ToString());
+                    tweetDTO.Contents = reader.GetString(2);
+                    tweetDTO.Comment_Count = reader.GetInt32(3);
+                    tweetDTO.Retweet_Count = reader.GetInt32(4);
+                    tweetDTO.Fav_Count = reader.GetInt32(5);
+                    tweetDTO.Date = reader.GetDateTime(6);
+                    string jsonvar = System.Text.Json.JsonSerializer.Serialize(tweetDTO);
+                    tweets.Remove(tweetDTO);
+                }
+            }
             con.Close();
 
-            //var tweet = await _context.Tweets.FindAsync(id);
-            //if (tweet == null)
-            //{
-            //    return NotFound();
-            //}
-
-            //_context.Tweets.Remove(tweet);
-            //await _context.SaveChangesAsync();
-
             return NoContent();
+
         }
 
 
