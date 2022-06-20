@@ -2330,19 +2330,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nolen\\.nuget\\packages\\": {}
+    "C:\\Users\\feyza\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nolen\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\Source\\Meowy.csproj",
+      "projectUniqueName": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\Source\\Meowy.csproj",
       "projectName": "Meowy",
-      "projectPath": "C:\\Users\\nolen\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\Source\\Meowy.csproj",
-      "packagesPath": "C:\\Users\\nolen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nolen\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\Source\\obj\\",
+      "projectPath": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\Source\\Meowy.csproj",
+      "packagesPath": "C:\\Users\\feyza\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\Source\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\nolen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\feyza\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2417,7 +2417,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

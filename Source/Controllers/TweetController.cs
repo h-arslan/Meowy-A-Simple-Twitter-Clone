@@ -13,8 +13,8 @@ namespace Meowy.Controllers
     {
         List<TweetDTO> tweets = new List<TweetDTO>();
         private readonly TweetContext _context;
-        SqlConnection con = new SqlConnection("Data Source=DESKTOP-MJOVOSF\\SQLEXPRESS;Initial Catalog=Meowy_Twitter_Clone;Integrated Security=True");
-        //merhaba feyza
+        SqlConnection con = new SqlConnection("Data Source=DESKTOP-BNRKNMI\\SQLEXPRESS;Initial Catalog=Meowy_Twitter_Clone;Integrated Security=True");
+
         public TweetController(TweetContext context)
         {
             _context = context;
@@ -103,7 +103,7 @@ namespace Meowy.Controllers
             con.Open();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "INSERT INTO [Tweet] values('" + tweet.Id + "', '" + tweet.User_Id + "', '" + tweet.Contents + "', '" + tweet.Comment_Count + "','" + tweet.Retweet_Count + "','" + tweet.Fav_Count + "', '" + tweet.Date.ToString("yyyy-MM-dd HH:mm:ss") + "')";
+            cmd.CommandText = "INSERT INTO [Tweet] values('" + tweet.Id + "', '" + tweet.User_Id + "', '" + tweet.Contents + "', '" + tweet.Comment_Count + "','" + tweet.Retweet_Count + "','" + tweet.Fav_Count + "', '" + tweet.Date.ToString("yyyy-MM-dd") + "')";
             cmd.ExecuteNonQuery();
             con.Close();
 

@@ -13,7 +13,7 @@ namespace Meowy.Controllers
     {
         private readonly UserContext _context;
 
-        SqlConnection con = new SqlConnection("Data Source=DESKTOP-MJOVOSF\\SQLEXPRESS;Initial Catalog=Meowy_Twitter_Clone;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=DESKTOP-BNRKNMI\\SQLEXPRESS;Initial Catalog=Meowy_Twitter_Clone;Integrated Security=True");
 
         public UserController(UserContext context)
         {
@@ -35,11 +35,11 @@ namespace Meowy.Controllers
                 {
                     UserDTO userDTO = new UserDTO();
                     userDTO.Id = Guid.Parse(reader.GetGuid(0).ToString());
-                    userDTO.Username = reader.GetString(1); ;
-                    userDTO.Password = reader.GetString(2);
-                    userDTO.Name = reader.GetString(3);
-                    userDTO.Surname = reader.GetString(4);
-                    userDTO.Email = reader.GetString(5);
+                    userDTO.Name = reader.GetString(1);
+                    userDTO.Surname = reader.GetString(2);
+                    userDTO.Username = reader.GetString(3);
+                    userDTO.Email = reader.GetString(4);
+                    userDTO.Password = reader.GetString(5);
                     userDTO.Birthdate = reader.GetDateTime(6);
                     userDTO.Creation_Date = reader.GetDateTime(7);
                     string jsonvar = System.Text.Json.JsonSerializer.Serialize(userDTO);
@@ -67,11 +67,11 @@ namespace Meowy.Controllers
                 {
                     UserDTO userDTO = new UserDTO();
                     userDTO.Id = Guid.Parse(reader.GetGuid(0).ToString());
-                    userDTO.Username = reader.GetString(1); ;
-                    userDTO.Password = reader.GetString(2);
-                    userDTO.Name = reader.GetString(3);
-                    userDTO.Surname = reader.GetString(4);
-                    userDTO.Email = reader.GetString(5);
+                    userDTO.Name = reader.GetString(1);
+                    userDTO.Surname = reader.GetString(2);
+                    userDTO.Username = reader.GetString(3);
+                    userDTO.Email = reader.GetString(4);
+                    userDTO.Password = reader.GetString(5);                   
                     userDTO.Birthdate = reader.GetDateTime(6);
                     userDTO.Creation_Date = reader.GetDateTime(7);
                     string jsonvar = System.Text.Json.JsonSerializer.Serialize(userDTO);
@@ -87,12 +87,12 @@ namespace Meowy.Controllers
         public async Task<ActionResult<UserDTO>> CreateUser(UserDTO userDTO) {
 
             var user = new User
-            {
-                Username = userDTO.Username,
-                Password = userDTO.Password,
+            {   
                 Name = userDTO.Name,
                 Surname = userDTO.Surname,
+                Username = userDTO.Username,
                 Email = userDTO.Email,
+                Password = userDTO.Password,               
                 Birthdate = userDTO.Birthdate,
                 Creation_Date = DateTime.Now,                
                 Is_Priv = userDTO.Is_Priv
@@ -105,7 +105,7 @@ namespace Meowy.Controllers
             con.Open();            
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "INSERT INTO [User] values('" + user.Id + "', '" + user.Username + "', '" + user.Email + "', '" + user.Password + "','" + user.Name + "','" + user.Surname + "', '" + user.Birthdate.ToString("yyyy-MM-dd HH:mm:ss") + "','" + user.Creation_Date.ToString("yyyy-MM-dd HH:mm:ss") + "','" + user.Is_Priv + "')";
+            cmd.CommandText = "INSERT INTO [User] values('" + user.Id + "', '" + user.Name + "', '" + user.Surname + "', '" + user.Username + "','" + user.Email + "','" + user.Password + "', '" + user.Birthdate.ToString("yyyy-MM-dd HH:mm:ss") + "','" + user.Creation_Date.ToString("yyyy-MM-dd HH:mm:ss") + "','" + user.Is_Priv + "')";
             cmd.ExecuteNonQuery();
             con.Close();
 
@@ -139,11 +139,11 @@ namespace Meowy.Controllers
             new UserDTO
             {                
                 Id = user.Id,
-                Username = user.Username,
-                Password = user.Password,
                 Name = user.Name,
                 Surname = user.Surname,
+                Username = user.Username,
                 Email = user.Email,
+                Password = user.Password,               
                 Birthdate = user.Birthdate,
                 Creation_Date = DateTime.Now,
                 Is_Priv = user.Is_Priv
