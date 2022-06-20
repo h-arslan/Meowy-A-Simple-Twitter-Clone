@@ -42,3 +42,55 @@ function addUser() {
         .catch(error => console.error('Unable to add item.', error));
 }
 
+function deleteUser(id) {
+    fetch(`${uri}/${id}`, {
+        method: 'DELETE'
+    })
+        .then(() => location.reload())
+        .catch(error => console.error('Unable to delete item.', error));
+}
+
+function updateUser(id) {
+    const item = {
+        name: document.getElementById('update-name').value.trim(),
+        surname: document.getElementById('update-surname').value.trim(),
+        username: document.getElementById('update-username').value.trim(),
+        email: document.getElementById('update-email').value.trim(),
+        password: document.getElementById('update-password').value.trim(),
+    };
+
+    fetch(`${uri}/${id}`, {
+        method: 'PUT',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(item)
+    })
+        .then(() => console.log(id))
+        .catch(error => console.error('Unable to update item.', error));
+}
+
+function checkUser() {
+
+    var username = document.getElementById('myUsername').value;
+    var password = document.getElementById('myPassword').value;
+
+    if (username.length == "" || password.length == "") {
+        alert("Fill the empty informations !");
+        return false;
+    }
+    else {
+
+        $.getJSON('http://localhost:5125/api/User', function (data) {
+
+            $.each(data, function (key, value) {
+
+                if (username == value.username && password == value.password) {
+                    window.location.href = 'home.html';
+                }
+            });
+        });
+
+    }
+}

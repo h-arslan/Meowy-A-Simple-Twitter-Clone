@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wSPuuWBVXR17U+fnZnrbqfXGH/VkVbp908AjqhtRF6w=",
+  "Hash": "UfKzq7+bmgC5FU5H1mOVSw6iTHubh2FkW+vJI4yQz88=",
   "Source": "Meowy",
   "BasePath": "_content/Meowy",
   "Mode": "Default",
@@ -16,6 +16,23 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\Source\\wwwroot\\css\\settings.css",
+      "SourceId": "Meowy",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\Source\\wwwroot\\",
+      "BasePath": "_content/Meowy",
+      "RelativePath": "css/settings.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\settings.css"
+    },
     {
       "Identity": "C:\\Users\\feyza\\OneDrive\\Documents\\GitHub\\Meowy-A-Simple-Twitter-Clone\\Source\\wwwroot\\css\\signin.css",
       "SourceId": "Meowy",

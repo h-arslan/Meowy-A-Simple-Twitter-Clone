@@ -35,7 +35,7 @@ function deleteTweet(id) {
     fetch(`${uri}/${id}`, {
         method: 'DELETE'
     })
-        .then(() => console.log(id))
+        .then(() => location.reload())
         .catch(error => console.error('Unable to delete item.', error));
 }
 

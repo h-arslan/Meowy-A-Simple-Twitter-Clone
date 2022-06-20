@@ -28,7 +28,7 @@ namespace Meowy.Controllers
             List<TweetDTO> tweets = new List<TweetDTO>();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "SELECT * FROM[Meowy_Twitter_Clone].[dbo].[Tweet]";
+            cmd.CommandText = "SELECT * FROM[Meowy_Twitter_Clone].[dbo].[Tweet] ORDER BY Date DESC;";
             
             using (SqlDataReader reader = cmd.ExecuteReader())
             {
@@ -103,7 +103,7 @@ namespace Meowy.Controllers
             con.Open();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "INSERT INTO [Tweet] values('" + tweet.Id + "', '" + tweet.User_Id + "', '" + tweet.Contents + "', '" + tweet.Comment_Count + "','" + tweet.Retweet_Count + "','" + tweet.Fav_Count + "', '" + tweet.Date.ToString("yyyy-MM-dd") + "')";
+            cmd.CommandText = "INSERT INTO [Tweet] values('" + tweet.Id + "', '" + tweet.User_Id + "', '" + tweet.Contents + "', '" + tweet.Comment_Count + "','" + tweet.Retweet_Count + "','" + tweet.Fav_Count + "', '" + tweet.Date + "')";
             cmd.ExecuteNonQuery();
             con.Close();
 
@@ -144,7 +144,6 @@ namespace Meowy.Controllers
             return NoContent();
 
         }
-
 
         private static TweetDTO ItemToDTO(Tweet tweet) =>
             new TweetDTO

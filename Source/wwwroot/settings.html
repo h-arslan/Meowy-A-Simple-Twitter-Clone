@@ -11,9 +11,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
           integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
           crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/site.js"></script>
+    <link rel="stylesheet" href="css/settings.css">
+    <script src="js/user.js"></script>
 </head>
 
 <body>
@@ -57,6 +59,47 @@
         <div class="feedHeader">
             <h2>Settings</h2>
         </div>
+
+
+        <form method="POST" onsubmit="updateUser()">
+            <div class="name">
+                Name <br>
+                <div class="input">
+                    <input type="text" id="update-name">
+                </div>
+            </div>
+
+            <div class="surname">
+                Surname <br>
+                <div class="input">
+                    <input type="text" id="update-surname">
+                </div>
+            </div>
+
+            <div class="username">
+                Username<br>
+                <div class="input">
+                    <input type="text" id="update-username">
+                </div>
+            </div>
+
+            <div class="email">
+                E-Mail <br>
+                <div class="input">
+                    <input type="text" id="update-email">
+                </div>
+            </div>
+
+            <div class="password">
+                Password <br>
+                <div class="input">
+                    <input type="text" id="add-password">
+                </div>
+            </div>
+
+            <input class="update-btn" type="submit" value="Update">
+        </form>
+
     </div>
     <!--feed ends-->
 
@@ -75,5 +118,20 @@
     </div>
     <!--widget ends-->
 </body>
+
+<script type="text/javascript">
+    var _name = document.getElementById("update-name");
+    var _surname = document.getElementById("update-surname");
+    var _username = document.getElementById("update-username");
+    var _email = document.getElementById("update-email");
+    var _password = document.getElementById("update-password");
+
+    $.getJSON('http://localhost:5125/api/User', function (data) {
+
+        $.each(data, function (key, value) {
+            _name = value.name;            
+        });
+    });
+</script>
 
 </html>
