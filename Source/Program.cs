@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Meowy.Models.Tweet;
 using Meowy.Models.User;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
