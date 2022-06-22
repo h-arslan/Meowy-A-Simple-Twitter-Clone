@@ -2,7 +2,7 @@ requirements-documents-template
 requirements-documents-template.md
 ### Meowy A Simple Twitter Clone
 ### Requirements Specification Document
-Version <1.0.0>  
+Version <1.9.0>  
 Revision History Table
 
 #### 1.Introduction  
@@ -13,25 +13,20 @@ This document is the requirements documentation of the simple twitter clone appl
 - Usability:   
   * Navigation: The main goal of navigation is navigating inside the application to any page should not require to use browser’s back/forward buttons... i.e., navigating to  a page and coming all the way back without using back/forward.  
   * Purpose of Feature: Users should be able to understand where the detailed options are by looking the general icons/buttons. i.e., Home Page to Changing of Profile Picture image  
-  
-- Localization: Localization is measure of proper context display on different locations. This different locations means countries which are in different time zones and different languages spoken. In this application, users will be able to display their language symbols properly, for instance Chinese, Japanese, use the application with their time zone.  
+   
 - Security:  
-	Users should obey some security rules to protect their and others accounts. These rules are,  
-  *	While registering the website users should be verify their email or phone number.   
+	Users should obey some security rules to protect their and others accounts. These rules are,
   *	While defining a password users should obey the limitations which are:  
     ---	Password should be longer than 8 characters  
     ---	Password should include at least one uppercase character and one special character  
   *	While signed-up state, user should enter his or her password to change a critical information about account  
-  *	If a user enters a wrong password, the warning will be “Wrong username or password” to eliminate the multiple passwords trying.  
-
-- Responsiveness: Display of the application will be automatically fit to the display size of computer without any misfunction.  
+  *	If a user enters a wrong password, the warning will be “Your username or password is wrong! Please try again...” to eliminate the multiple passwords trying.
 
 - Compatibility: As this application will run on web server, it will be compatible with the most of the operating systems.  
 
 - Development and Deployment Spaces:  
   *	For backend programing and giving functionality to CRUD services, C# .NET 6, for development environment Visual Studio 2022 will be used. To read and write data by using HTTP requests, REST.API’s will be generated.  
-  *	As a database server SQL SERVER and to edit and design visually, Microsoft SQL Server Management Studio will be used.   
-  *	For running environment Docker containers will be used.  
+  *	As a database server SQL SERVER and to edit and design visually, Microsoft SQL Server Management Studio will be used.    
 
 #### 3.User Stories/Functional Specifications
 A brief terminology for Twitter clone we created under the name Meowy.
@@ -40,7 +35,7 @@ Remeow: When users re-share post that someone else has shared (retweet)
 Comment: Posts written specifically to one of the shared post.
 Follow request: A request notification that users send to each other so they can see the content they've shared.
 
-User story 1: As a user, I can log in to my own account using username and password from the “sign in” page when I open the application. If I don't have an account, I can create a new account by clicking the sign-up button. The first part that comes up after logging in is the “home page”. Each page has a menu bar on the left and a small explore section on the right. I can fill in the text box in the middle of the home page, create a new post and see the posts of the users I have followed.
+User story 1: As a user, I can log in to my own account using username and password from the “sign in” page when I open the application. If I don't have an account, I can create a new account by clicking the sign-up button. The first part that comes up after logging in is the “home page”. Each page has a menu bar on the left and a small explore section on the right. I can fill in the text box in the middle of the home page, create a new post and see the posts of other users.
 
 User story 2: As a user, when I click on the “explore” from the menu bar, I see trending topics on the page that opens. When I click on these topics, I can see the most popular posts shared on this topics. When I type the word I want to search for in the search field at the top, I can see the shared posts using this word. On the right side of each page there are small explore sections that serve the same function as this section.
 
