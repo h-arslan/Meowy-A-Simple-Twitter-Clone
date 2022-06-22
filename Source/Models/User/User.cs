@@ -1,4 +1,5 @@
-﻿namespace Meowy.Models.User
+﻿using Meowy.Models.Tweet;
+namespace Meowy.Models.User
 {
     public class User
     {

@@ -50,23 +50,23 @@ function addUser() {
 //        .catch(error => console.error('Unable to delete item.', error));
 //}
 
-//function updateUser(id) {
-//    const item = {
-//        name: document.getElementById('update-name').value.trim(),
-//        surname: document.getElementById('update-surname').value.trim(),
-//        username: document.getElementById('update-username').value.trim(),
-//        email: document.getElementById('update-email').value.trim(),
-//        password: document.getElementById('update-password').value.trim(),
-//    };
+function updateUser(id) {
+    const item = {
+        name: document.getElementById('update-name').value.trim(),
+        surname: document.getElementById('update-surname').value.trim(),
+        username: document.getElementById('update-username').value.trim(),
+        email: document.getElementById('update-email').value.trim(),
+        password: document.getElementById('update-password').value.trim(),
+    };
 
-//    fetch(`${uri}/${id}`, {
-//        method: 'PUT',
-//        headers: {
-//            'Accept': 'application/json',
-//            'Content-Type': 'application/json'
-//        },
-//        body: JSON.stringify(item)
-//    })
-//        .then(() => console.log(id))
-//        .catch(error => console.error('Unable to update item.', error));
-//}
+    fetch(`${uri}/${id}`, {
+        method: 'PUT',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(item)
+    })
+        .then(() => console.log(id))
+        .catch(error => console.error('Unable to update item.', error));
+}

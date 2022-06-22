@@ -10,6 +10,5 @@ namespace Meowy.Models.User
         }
 
         public DbSet<User> Users { get; set; } = null!;
-
     }
 }

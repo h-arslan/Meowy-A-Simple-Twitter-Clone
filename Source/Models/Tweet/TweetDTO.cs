@@ -1,4 +1,5 @@
-﻿namespace Meowy.Models.Tweet
+﻿using Meowy.Models.User;
+namespace Meowy.Models.Tweet
 {
     public class TweetDTO
     {

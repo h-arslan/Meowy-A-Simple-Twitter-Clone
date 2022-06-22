@@ -58,7 +58,11 @@
                     <div class="password">
                         Password <br>
                         <div class="input">
-                            <input type="text" id="add-password">
+                            <input type="password" id="add-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                                   title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+                        </div>
+                        <div class="input2">
+                            <input type="checkbox" onclick="showPassword()"> Show Password
                         </div>
                     </div>
 
@@ -77,5 +81,16 @@
     </div>
 
 </body>
+
+<script>
+    function showPassword() {
+        var x = document.getElementById("add-password");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
+</script>
 
 </html>
