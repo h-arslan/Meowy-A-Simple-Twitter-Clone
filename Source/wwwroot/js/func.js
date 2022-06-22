@@ -1,25 +1,25 @@
 ﻿
-//function checkUser() {
+function checkUser() {
 
-//    var username = document.getElementById('myUsername').value;
-//    var password = document.getElementById('myPassword').value;         
+    var username = document.getElementById('myUsername').value;
+    var password = document.getElementById('myPassword').value;         
 
-//    if (username.length == "" || password.length == "") {
-//        alert("Fill the empty informations !");
-//        return false;
-//    }
-//    else {
+    if (username.length == "" || password.length == "") {
+        alert("Fill the empty informations !");
+        return false;
+    }
+    else {
 
-//        $.getJSON('http://localhost:5125/api/User', function (data) {
+        $.getJSON('http://localhost:5125/api/User', function (data) {
 
-//            $.each(data, function (key, value) {
+            $.each(data, function (key, value) {
 
-//                if (username == value.username && password == value.password) {
-//                    alert(value.id);
-//                    window.location.href = 'home.html';
-//                }
-//            });
-//        });
+                if (username == value.username && password == value.password) {
+                    //alert(value.id);
+                    window.location.href = 'home.html';
+                }
+            });
+        });
         
-//    }
-//}
+    }
+}

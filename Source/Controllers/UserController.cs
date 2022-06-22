@@ -114,68 +114,68 @@ namespace Meowy.Controllers
                 ItemToDTO(user));
         }
 
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteUser(Guid id)
-        {
-            con.Open();
-            SqlCommand cmd = con.CreateCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "DELETE FROM[Meowy_Twitter_Clone].[dbo].[User] WHERE Id = @id";
-            cmd.Parameters.Add("@id", SqlDbType.UniqueIdentifier, 200).Value = id;
+        //[HttpDelete("{id}")]
+        //public async Task<IActionResult> DeleteUser(Guid id)
+        //{
+        //    con.Open();
+        //    SqlCommand cmd = con.CreateCommand();
+        //    cmd.CommandType = CommandType.Text;
+        //    cmd.CommandText = "DELETE FROM[Meowy_Twitter_Clone].[dbo].[User] WHERE Id = @id";
+        //    cmd.Parameters.Add("@id", SqlDbType.UniqueIdentifier, 200).Value = id;
 
-            using (SqlDataReader reader = cmd.ExecuteReader())
-            {
-                while (reader.Read())
-                {
-                    UserDTO userDTO = new UserDTO();
-                    userDTO.Id = Guid.Parse(reader.GetGuid(0).ToString());
-                    userDTO.Name = reader.GetString(1);
-                    userDTO.Surname = reader.GetString(2);
-                    userDTO.Username = reader.GetString(3);
-                    userDTO.Email = reader.GetString(4);
-                    userDTO.Password = reader.GetString(5);
-                    userDTO.Birthdate = reader.GetDateTime(6);
-                    userDTO.Creation_Date = reader.GetDateTime(7);
-                    string jsonvar = System.Text.Json.JsonSerializer.Serialize(userDTO);
-                    users.Remove(userDTO);
-                }
-            }
-            con.Close();
+        //    using (SqlDataReader reader = cmd.ExecuteReader())
+        //    {
+        //        while (reader.Read())
+        //        {
+        //            UserDTO userDTO = new UserDTO();
+        //            userDTO.Id = Guid.Parse(reader.GetGuid(0).ToString());
+        //            userDTO.Name = reader.GetString(1);
+        //            userDTO.Surname = reader.GetString(2);
+        //            userDTO.Username = reader.GetString(3);
+        //            userDTO.Email = reader.GetString(4);
+        //            userDTO.Password = reader.GetString(5);
+        //            userDTO.Birthdate = reader.GetDateTime(6);
+        //            userDTO.Creation_Date = reader.GetDateTime(7);
+        //            string jsonvar = System.Text.Json.JsonSerializer.Serialize(userDTO);
+        //            users.Remove(userDTO);
+        //        }
+        //    }
+        //    con.Close();
 
-            return NoContent();
-        }
+        //    return NoContent();
+        //}
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateUser(Guid id, User user)
-        {
-            if (id != user.Id)
-            {
-                return BadRequest();
-            }
+        //[HttpPut("{id}")]
+        //public async Task<IActionResult> UpdateUser(Guid id, User user)
+        //{
+        //    if (id != user.Id)
+        //    {
+        //        return BadRequest();
+        //    }
 
-            _context.Entry(user).State = EntityState.Modified;
+        //    _context.Entry(user).State = EntityState.Modified;
 
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!UserExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-            return NoContent();
-        }
-        private bool UserExists(Guid id)
-        {
-            return _context.Users.Any(e => e.Id == id);
-        }
+        //    try
+        //    {
+        //        await _context.SaveChangesAsync();
+        //    }
+        //    catch (DbUpdateConcurrencyException)
+        //    {
+        //        if (!UserExists(id))
+        //        {
+        //            return NotFound();
+        //        }
+        //        else
+        //        {
+        //            throw;
+        //        }
+        //    }
+        //    return NoContent();
+        //}
+        //private bool UserExists(Guid id)
+        //{
+        //    return _context.Users.Any(e => e.Id == id);
+        //}
 
         private static UserDTO ItemToDTO(User user) =>
             new UserDTO
