@@ -29,11 +29,11 @@ This document is the requirements documentation of the simple twitter clone appl
   *	As a database server SQL SERVER and to edit and design visually, Microsoft SQL Server Management Studio will be used.    
 
 #### 3.User Stories/Functional Specifications
-A brief terminology for Twitter clone we created under the name Meowy.
-Meow: Posts that users have written and shared. (tweet) 
-Remeow: When users re-share post that someone else has shared (retweet)
-Comment: Posts written specifically to one of the shared post.
-Follow request: A request notification that users send to each other so they can see the content they've shared.
+A brief terminology for Twitter clone we created under the name Meowy.  
+Meow: Posts that users have written and shared. (tweet)   
+Remeow: When users re-share post that someone else has shared (retweet)  
+Comment: Posts written specifically to one of the shared post.  
+Follow request: A request notification that users send to each other so they can see the content they've shared.  
 
 User story 1: As a user, I can log in to my own account using username and password from the “sign in” page when I open the application. If I don't have an account, I can create a new account by clicking the sign-up button. The first part that comes up after logging in is the “home page”. Each page has a menu bar on the left and a small explore section on the right. I can fill in the text box in the middle of the home page, create a new post and see the posts of other users.
 
@@ -49,7 +49,7 @@ User story 6: When I enter the “settings page” as a user, I see two parts as
 The Security option includes the privacy settings of the account. In this section, the account can be set to private. When I change the mode to private mode, my posts can only be observed by people who follow me. when my account isn't in private mode, my posts are public.
 
 #### 4.Database Design  
-![image](https://user-images.githubusercontent.com/75277382/170879711-8ff929e8-d976-41d0-8374-b8b0ae4f3c36.png)
+![database_diagram](https://user-images.githubusercontent.com/96079325/175096379-26e021f4-ee28-4506-82c4-fb2c235f1f3c.png)
 
 #### 5.Mock UI Screens
 >Sign-in Page
